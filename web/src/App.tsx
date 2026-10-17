@@ -1,4 +1,5 @@
 import { useState, type ReactNode } from "react";
+import { ScreenDock } from "./components/ScreenDock";
 import { TopBar } from "./components/TopBar";
 import { useFindings } from "./hooks/useFindings";
 import { useRunStream } from "./hooks/useRunStream";
@@ -33,14 +34,11 @@ export function App() {
 
   return (
     <div className="app">
-      <TopBar
-        scanId={scanId}
-        runStatus={run.runStatus}
-        currentScreen={screen}
-        onPickScreen={setScreen}
-        onStartRun={run.startRun}
-      />
+      <TopBar scanId={scanId} runStatus={run.runStatus} onStartRun={run.startRun} />
       {screenByName[screen]}
+      <div className="dock-area">
+        <ScreenDock currentScreen={screen} onPickScreen={setScreen} />
+      </div>
     </div>
   );
 }
