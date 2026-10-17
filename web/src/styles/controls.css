@@ -14,19 +14,19 @@
 }
 
 .button:hover:not(:disabled) {
-  border-color: var(--copper);
+  border-color: var(--accent);
 }
 
 .button[data-variant="primary"] {
-  border-color: var(--copper);
-  background: var(--copper);
-  color: var(--on-copper);
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--on-accent);
   font-weight: 700;
-  box-shadow: 0 0 24px var(--copper-glow);
+  box-shadow: 0 0 24px var(--accent-glow);
 }
 
 .button[data-variant="primary"]:hover:not(:disabled) {
-  background: var(--copper-text);
+  background: var(--accent-text);
 }
 
 .button:disabled {
@@ -78,25 +78,25 @@
 
 .status-chip[data-status="fix_now"],
 .status-chip[data-status="failed"] {
-  background: var(--red-soft);
-  color: var(--red);
+  background: var(--urgent-soft);
+  color: var(--urgent);
 }
 
 .status-chip[data-status="watch"],
 .status-chip[data-status="paused"] {
-  background: var(--amber-soft);
-  color: var(--amber);
+  background: var(--watch-soft);
+  color: var(--watch);
 }
 
 .status-chip[data-status="accept"],
 .status-chip[data-status="finished"] {
-  background: var(--green-soft);
-  color: var(--green);
+  background: var(--calm-soft);
+  color: var(--calm);
 }
 
 .status-chip[data-status="running"] {
-  background: var(--copper-soft);
-  color: var(--copper-text);
+  background: var(--accent-soft);
+  color: var(--accent-text);
 }
 
 .status-chip[data-status="running"]::before {
@@ -132,5 +132,5 @@
 }
 
 .accent {
-  color: var(--copper-text);
+  color: var(--accent-text);
 }
