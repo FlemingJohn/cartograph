@@ -14,6 +14,7 @@ dependencies = [
     "uvicorn",
     "pydantic",
     "python-dotenv",
+    "truststore>=0.10.5",
 ]
 
 [dependency-groups]
