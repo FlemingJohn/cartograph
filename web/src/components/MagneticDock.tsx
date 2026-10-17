@@ -21,7 +21,7 @@ export function MagneticDock({
       className="magnetic-dock"
       onMouseMove={(event) => pointerX.set(event.clientX)}
       onMouseLeave={() => pointerX.set(Infinity)}
-      initial={{ opacity: 0, y: -16 }}
+      initial={{ opacity: 0, y: 24 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
     >
