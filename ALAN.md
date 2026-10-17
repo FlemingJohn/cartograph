@@ -6,8 +6,6 @@ FalkorDB Cloud and the MCP tool server that asks it questions.
 Your folders: `graph/`, `tools/`, `tests/graph/`, `tests/tools/`.
 Do not edit `agents/`, `api/` or `web/`. Those are Iesvs's.
 
-Deadline: Oct 18, 11:59 PM GMT+5:30. We submit by 11 PM.
-
 ---
 
 ## Setup
@@ -27,9 +25,7 @@ key is shared by the team.
 Each task has a "done when" line. Do not start the next task until it is
 true.
 
-### Oct 17
-
-**1. Agree the contracts with Iesvs (1 hour, together)**
+**1. Agree the contracts with Iesvs**
 You write `docs/map-shape.md` and `docs/tool-contracts.md`, starting from
 the drafts at the bottom of this file. Iesvs writes `docs/state-shape.md`.
 Done when: both of you have read all three and nothing is left open.
@@ -93,10 +89,8 @@ one test per tool.
 Ask Claude Code to call each tool for payments and the report generator.
 Done when: the answers match what you see in FalkorDB Browser.
 
-**10. Night check-in with Iesvs**
+**10. Check in with Iesvs**
 Iesvs swaps the fake tools for yours. Run one full triage end to end.
-
-### Oct 18
 
 **11. Saving decisions**
 `record_decision` writes `(:TriageDecision)` linked to the flaw, the
@@ -109,13 +103,11 @@ The demo connects the report generator to the front door, reruns, and
 shows its rank jump.
 Done when: adding the link and rerunning moves the report generator up.
 
-**13. Midday: feature freeze.** Fixes only after this.
-
-**14. README and blog post**
+**13. README and blog post**
 README: setup, how to run, MITRE credits. Blog post for the side prize:
 the problem, the graph, one route, what we learned.
 
-**15. 11 PM: submit together.**
+**14. Submit together.**
 
 ---
 
