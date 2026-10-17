@@ -17,23 +17,15 @@
   font: 700 var(--text-counter) / 0.9 var(--font-display);
   letter-spacing: -0.04em;
   font-variant-numeric: tabular-nums;
-  min-width: 3ch;
+  min-width: 4ch;
   text-align: center;
 }
 
-.intro-progress {
-  width: min(320px, 60vw);
-  height: 2px;
-  overflow: hidden;
-  border-radius: 2px;
-  background: var(--line-strong);
-}
-
-.intro-progress-fill {
-  display: block;
-  height: 100%;
-  background: var(--accent);
-  box-shadow: 0 0 12px var(--accent);
+.intro-counter-percent {
+  margin-left: 0.04em;
+  font-size: 0.5em;
+  vertical-align: 0.7em;
+  color: var(--accent);
 }
 
 .intro-title {
