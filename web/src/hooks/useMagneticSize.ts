@@ -22,7 +22,7 @@ export function useMagneticSize(
   const smoothScale = useSpring(scale, springSettings);
   const size = useTransform(smoothScale, (value) => value * iconSize);
   const lift = useSpring(
-    useTransform(smoothScale, (value) => (value - 1) * 6),
+    useTransform(smoothScale, (value) => (value - 1) * -8),
     springSettings,
   );
   return { size, lift };
