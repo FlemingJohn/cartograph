@@ -8,7 +8,7 @@ export function ApprovalPanel({ plan, findings }: { plan: PlannedAction[]; findi
   }
   const titleById = new Map(findings.map((finding) => [finding.finding_id, finding.title]));
   return (
-    <ol className="finding-list">
+    <ol className="plan-list">
       {plan.map((action) => (
         <PlanItem
           key={action.finding_id}
