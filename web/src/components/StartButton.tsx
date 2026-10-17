@@ -24,7 +24,7 @@ export function StartButton({ onClick }: { onClick: () => void }) {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.94 }}
       >
-        Start
+        Try now
         <span className="start-button-arrow">
           <motion.span
             className="start-button-arrow-icon"
