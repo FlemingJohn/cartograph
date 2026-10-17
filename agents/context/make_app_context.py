@@ -1,5 +1,6 @@
 import os
 
+import truststore
 from dotenv import load_dotenv
 from langchain_google_genai import ChatGoogleGenerativeAI
 
@@ -9,6 +10,7 @@ from agents.context.app_context import AppContext
 
 async def make_app_context() -> AppContext:
     load_dotenv()
+    truststore.inject_into_ssl()
     return AppContext(
         model=make_model(),
         tools=await connect_tools(),
