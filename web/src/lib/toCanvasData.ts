@@ -5,8 +5,8 @@ import { getThemeToken } from "./getThemeToken";
 
 const colourTokenByKind: Record<RouteNodeKind, string> = {
   internet: "system",
-  service: "copper",
-  data_store: "red",
+  service: "accent",
+  data_store: "urgent",
 };
 
 const labelByKind: Record<RouteNodeKind, string> = {
