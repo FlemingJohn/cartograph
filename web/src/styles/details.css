@@ -74,7 +74,7 @@
   display: block;
   height: 100%;
   border-radius: 5px;
-  background: linear-gradient(90deg, var(--copper), var(--copper-text));
+  background: linear-gradient(90deg, var(--accent), var(--accent-text));
 }
 
 .score-part-points {
@@ -103,7 +103,7 @@
   overflow-x: auto;
   border-radius: var(--radius-small);
   background: var(--background);
-  color: var(--patina);
+  color: var(--accent-text);
   font: 400 11.5px / 1.55 var(--font-mono);
   white-space: pre-wrap;
   word-break: break-word;
@@ -137,24 +137,24 @@
   height: 9px;
   border-radius: 50%;
   background: var(--panel);
-  border: 2px solid var(--step-colour, var(--copper));
+  border: 2px solid var(--step-colour, var(--accent));
 }
 
 .activity-item[data-kind="paused"] {
-  --step-colour: var(--amber);
+  --step-colour: var(--watch);
 }
 
 .activity-item[data-kind="finished"] {
-  --step-colour: var(--green);
+  --step-colour: var(--calm);
 }
 
 .activity-item[data-kind="failed"] {
-  --step-colour: var(--red);
+  --step-colour: var(--urgent);
 }
 
 .activity-node {
   font: 500 var(--text-small) / 1.3 var(--font-display);
-  color: var(--copper-text);
+  color: var(--accent-text);
 }
 
 .activity-message {
