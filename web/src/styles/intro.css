@@ -4,9 +4,7 @@
   display: grid;
   place-items: center;
   overflow: hidden;
-  background:
-    radial-gradient(ellipse 60% 45% at 50% 50%, var(--copper-glow), transparent 70%),
-    var(--background);
+  background: var(--background);
 }
 
 .intro-loading {
@@ -34,16 +32,13 @@
 .intro-progress-fill {
   display: block;
   height: 100%;
-  background: var(--copper);
-  box-shadow: 0 0 12px var(--copper);
+  background: var(--accent);
+  box-shadow: 0 0 12px var(--accent);
 }
 
 .intro-title {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  align-content: center;
-  justify-items: center;
+  position: absolute;
+  inset: 0;
 }
 
 .intro-particles {
@@ -53,8 +48,12 @@
 
 .intro-tagline {
   margin: 0 0 var(--space-6);
-  font: 400 var(--text-title) / 1.5 var(--font-body);
-  color: var(--muted);
+  padding: var(--space-2) var(--space-4);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--background) 78%, transparent);
+  backdrop-filter: blur(8px);
+  font: 500 var(--text-title) / 1.5 var(--font-body);
+  color: var(--ink);
   text-align: center;
 }
 
@@ -64,12 +63,12 @@
   gap: var(--space-3);
   height: 56px;
   padding: 0 var(--space-2) 0 var(--space-6);
-  border: var(--line-width) solid var(--copper);
+  border: var(--line-width) solid var(--accent);
   border-radius: 999px;
-  background: var(--copper);
-  color: var(--on-copper);
+  background: var(--accent);
+  color: var(--on-accent);
   font: 700 18px / 1 var(--font-display);
-  box-shadow: 0 0 40px var(--copper-glow);
+  box-shadow: 0 0 40px var(--accent-glow);
 }
 
 .start-button-arrow {
@@ -78,11 +77,35 @@
   width: 42px;
   height: 42px;
   border-radius: 999px;
-  background: var(--on-copper);
-  color: var(--copper);
+  background: var(--on-accent);
+  color: var(--accent);
   transition: transform 0.2s ease;
 }
 
 .start-button:hover .start-button-arrow {
   transform: translateX(4px);
+}
+
+.hero-geometric {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--background);
+}
+
+.hero-geometric-background {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.hero-geometric-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-content: center;
+  justify-items: center;
 }
