@@ -8,7 +8,7 @@
   border-radius: 22px;
   background: color-mix(in srgb, var(--panel) 80%, transparent);
   backdrop-filter: blur(20px) saturate(1.5);
-  box-shadow: 0 12px 40px var(--sunken);
+  box-shadow: 0 12px 40px var(--shadow);
 }
 
 .dock-item {
@@ -28,10 +28,10 @@
 }
 
 .dock-item[aria-current="page"] {
-  border-color: var(--copper);
-  background: linear-gradient(180deg, var(--copper-soft), var(--panel));
-  color: var(--copper-text);
-  box-shadow: 0 0 24px var(--copper-glow);
+  border-color: var(--accent);
+  background: linear-gradient(180deg, var(--accent-soft), var(--panel));
+  color: var(--accent-text);
+  box-shadow: 0 0 24px var(--accent-glow);
 }
 
 .dock-icon {
@@ -52,8 +52,8 @@
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background: var(--copper);
-  box-shadow: 0 0 8px var(--copper);
+  background: var(--accent);
+  box-shadow: 0 0 8px var(--accent);
 }
 
 .dock-label {
