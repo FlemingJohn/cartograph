@@ -22,16 +22,16 @@
 }
 
 .summary-tile[data-status="fix_now"] {
-  --tile-colour: var(--red);
-  border-color: color-mix(in srgb, var(--red) 35%, var(--line));
+  --tile-colour: var(--urgent);
+  border-color: color-mix(in srgb, var(--urgent) 35%, var(--line));
 }
 
 .summary-tile[data-status="watch"] {
-  --tile-colour: var(--amber);
+  --tile-colour: var(--watch);
 }
 
 .summary-tile[data-status="accept"] {
-  --tile-colour: var(--green);
+  --tile-colour: var(--calm);
 }
 
 .summary-number {
@@ -78,8 +78,8 @@
 }
 
 .finding-row[aria-pressed="true"] {
-  border-color: color-mix(in srgb, var(--copper) 45%, transparent);
-  background: var(--copper-soft);
+  border-color: color-mix(in srgb, var(--accent) 45%, transparent);
+  background: var(--accent-soft);
 }
 
 .finding-rank {
