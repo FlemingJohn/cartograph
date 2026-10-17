@@ -4,9 +4,9 @@
   gap: var(--space-3);
   padding: var(--space-4) var(--space-5);
   overflow: hidden;
-  border: var(--line-width) solid var(--line);
+  border: var(--line-width) solid color-mix(in srgb, var(--accent) 18%, var(--line));
   border-radius: var(--radius);
-  background: linear-gradient(160deg, var(--raised), var(--panel));
+  background: linear-gradient(160deg, var(--gradient-pale), var(--accent-soft));
 }
 
 .summary-tile::after {
