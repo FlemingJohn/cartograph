@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ActivityLog } from "../components/ActivityLog";
+import { DashboardHeadline } from "../components/DashboardHeadline";
 import { FindingList } from "../components/FindingList";
 import { KpiRow } from "../components/KpiRow";
 import { Pane } from "../components/Pane";
@@ -30,8 +31,7 @@ export function DashboardScreen({
   return (
     <main className="screen">
       <div className="screen-head">
-        <h1 className="screen-title">Attack paths</h1>
-        <p className="screen-note">Ranked by what an attacker can actually reach.</p>
+        <DashboardHeadline findings={findings} />
       </div>
       <KpiRow findings={findings} />
       <div className="dashboard-panes">
