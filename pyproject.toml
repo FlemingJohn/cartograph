@@ -8,7 +8,7 @@ dependencies = [
     "langgraph",
     "langchain-falkordb[langgraph]",
     "langchain-mcp-adapters",
-    "langchain-anthropic",
+    "langchain-google-genai",
     "mcp",
     "fastapi",
     "uvicorn",
