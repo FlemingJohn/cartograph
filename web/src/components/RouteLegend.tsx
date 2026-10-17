@@ -2,8 +2,8 @@ import type { CSSProperties } from "react";
 
 const legendItems = [
   { label: "Internet", colour: "var(--system)" },
-  { label: "Service", colour: "var(--copper)" },
-  { label: "Data", colour: "var(--red)" },
+  { label: "Service", colour: "var(--accent)" },
+  { label: "Data", colour: "var(--urgent)" },
 ];
 
 export function RouteLegend() {
