@@ -51,7 +51,8 @@
   --radius-small: 8px;
   --line-width: 1px;
   --accent-width: 3px;
-  --top-bar-height: 96px;
+  --top-bar-height: 80px;
+  --dock-clearance: 128px;
   --pane-head-height: 44px;
   --control-height: 36px;
   --icon-size: 18px;
