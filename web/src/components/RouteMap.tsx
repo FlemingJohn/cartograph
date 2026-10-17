@@ -36,7 +36,7 @@ export function RouteMap({ route }: { route: RouteGraph | null }) {
 
 function makeCanvasConfiguration(onLayoutDone: () => void) {
   return {
-    backgroundColor: getThemeToken("background"),
+    backgroundColor: getThemeToken("sunken"),
     foregroundColor: getThemeToken("ink"),
     layoutMode: "tree" as const,
     layoutOptions: { tree: { direction: "lr" as const, levelDistance: 70, nodeSpacing: 50 } },
