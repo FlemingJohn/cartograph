@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { CursorDrivenParticleTypography } from "../components/CursorDrivenParticleTypography";
+import { HeroGeometric } from "../components/HeroGeometric";
 import { LoadingCounter } from "../components/LoadingCounter";
 import { StartButton } from "../components/StartButton";
 import { useCountUp } from "../hooks/useCountUp";
@@ -21,9 +22,11 @@ export function IntroScreen({ onStart }: { onStart: () => void }) {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6 }}
           >
-            <CursorDrivenParticleTypography text="CartoGraph" className="intro-particles" />
-            <p className="intro-tagline">Attack paths, ranked by what an attacker can reach.</p>
-            <StartButton onClick={onStart} />
+            <HeroGeometric>
+              <CursorDrivenParticleTypography text="CartoGraph" className="intro-particles" />
+              <p className="intro-tagline">Attack paths, ranked by what an attacker can reach.</p>
+              <StartButton onClick={onStart} />
+            </HeroGeometric>
           </motion.div>
         ) : (
           <LoadingCounter key="counter" count={count} />
