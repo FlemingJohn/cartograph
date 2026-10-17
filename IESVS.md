@@ -6,8 +6,6 @@ agents, the backend and the dashboard.
 Your folders: `agents/`, `api/`, `web/`, `tests/agents/`, `tests/api/`.
 Do not edit `graph/` or `tools/`. Those are Alan's.
 
-Deadline: Oct 18, 11:59 PM GMT+5:30. We submit by 11 PM.
-
 ---
 
 ## Setup
@@ -49,9 +47,7 @@ Add two files the starter structure does not have yet:
 Each task has a "done when" line. Do not start the next task until it is
 true.
 
-### Oct 17
-
-**1. Agree the contracts with Alan (1 hour, together)**
+**1. Agree the contracts with Alan**
 You write `docs/state-shape.md`, starting from the draft at the bottom of
 this file. Alan writes `docs/map-shape.md` and `docs/tool-contracts.md`.
 Done when: both of you have read all three and nothing is left open.
@@ -97,13 +93,11 @@ point after approval.
 the dashboard as server-sent events.
 Done when: `curl` on `stream_run` shows steps arriving live.
 
-**9. Night check-in with Alan**
+**9. Check in with Alan**
 Swap `agents/fakes/` for the real tools in `agents/connect_tools.py`, using
 `MultiServerMCPClient` with three servers: ours, the FalkorDB MCP server in
 read-only mode, and cyber-mcp-tools at `CYBER_MCP_URL`. Run one full triage
 end to end. Then delete `agents/fakes/`.
-
-### Oct 18
 
 **10. Dashboard**
 Set up the web app:
@@ -124,13 +118,11 @@ Done when: a full run shows on the dashboard with the payments route drawn.
 add-link script and reruns.
 Done when: both work in the demo order.
 
-**12. Midday: feature freeze.** Fixes only after this.
-
-**13. Record the demo**
+**12. Record the demo**
 Three minutes, run locally. Follow the demo plan on the team page. Keep
 `.env` and the Gemini key off screen. Record more than one take.
 
-**14. 11 PM: submit together.**
+**13. Submit together.**
 
 ---
 
