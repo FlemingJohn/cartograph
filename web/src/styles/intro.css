@@ -42,18 +42,14 @@
 }
 
 .intro-particles {
-  height: clamp(220px, 32vh, 320px);
+  height: clamp(170px, 22vh, 220px);
   min-height: 0;
 }
 
 .intro-tagline {
   margin: 0 0 var(--space-6);
-  padding: var(--space-2) var(--space-4);
-  border-radius: 999px;
-  background: color-mix(in srgb, var(--background) 78%, transparent);
-  backdrop-filter: blur(8px);
-  font: 500 var(--text-title) / 1.5 var(--font-body);
-  color: var(--ink);
+  font: 500 clamp(18px, 1.8vw, 24px) / 1.4 var(--font-body);
+  color: var(--muted);
   text-align: center;
 }
 
@@ -82,8 +78,20 @@
   transition: transform 0.2s ease;
 }
 
-.start-button:hover .start-button-arrow {
-  transform: translateX(4px);
+.start-button-arrow-icon {
+  display: grid;
+  place-items: center;
+}
+
+.start-wipe {
+  position: fixed;
+  z-index: 100;
+  width: 300vmax;
+  height: 300vmax;
+  margin: -150vmax 0 0 -150vmax;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--accent) 0%, var(--gradient-deep) 45%, var(--gradient-pale) 70%);
+  pointer-events: none;
 }
 
 .hero-geometric {
