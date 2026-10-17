@@ -1,5 +1,5 @@
 .dashboard-panes > .pane {
-  height: max(480px, calc(100vh - 330px));
+  height: max(420px, calc(100vh - 440px));
 }
 
 .route-map {
