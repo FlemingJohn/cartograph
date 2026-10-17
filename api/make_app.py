@@ -9,7 +9,7 @@ from agents.make_triage_graph import make_triage_graph
 from api.routes import approve_run, get_findings, get_route, start_run, stream_run
 from api.services.app_services import AppServices
 
-DASHBOARD_URLS = ["http://localhost:5173", "http://127.0.0.1:5173"]
+DASHBOARD_URLS = ["http://localhost:5180", "http://127.0.0.1:5180"]
 
 
 def make_app() -> FastAPI:
