@@ -8,7 +8,8 @@ export function makeTextParticles(
   settings: ParticleTextSettings,
 ): Particle[] {
   const context = canvas.getContext("2d", { willReadFrequently: true });
-  if (!context) return [];
+  const hasArea = width > 0 && height > 0;
+  if (!context || !hasArea) return [];
   const pixelRatio = window.devicePixelRatio || 1;
   canvas.width = width * pixelRatio;
   canvas.height = height * pixelRatio;
