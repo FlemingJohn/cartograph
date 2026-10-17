@@ -1,0 +1,108 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  height: var(--control-height);
+  padding-inline: var(--space-3);
+  border: var(--line-width) solid var(--line-strong);
+  background: var(--background);
+  color: var(--ink);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.button:hover:not(:disabled) {
+  border-color: var(--copper);
+  color: var(--copper-text);
+}
+
+.button[data-variant="primary"] {
+  border-color: var(--copper);
+  background: var(--copper);
+  color: var(--on-copper);
+}
+
+.button[data-variant="primary"]:hover:not(:disabled) {
+  background: var(--copper-text);
+  color: var(--on-copper);
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  border-color: var(--line);
+  background: var(--sunken);
+  color: var(--faint);
+}
+
+.icon {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  flex: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.75;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+}
+
+.label {
+  font: 600 var(--text-label) / 1 var(--font-display);
+  letter-spacing: var(--label-spacing);
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.status-chip {
+  display: inline-block;
+  padding: 2px var(--space-2);
+  border-left: var(--accent-width) solid currentColor;
+  font: 600 var(--text-label) / 1.4 var(--font-display);
+  letter-spacing: var(--label-spacing);
+  text-transform: uppercase;
+  white-space: nowrap;
+  align-self: start;
+}
+
+.status-chip[data-status="fix_now"],
+.status-chip[data-status="failed"] {
+  background: var(--red-soft);
+  color: var(--red);
+}
+
+.status-chip[data-status="watch"],
+.status-chip[data-status="paused"] {
+  background: var(--amber-soft);
+  color: var(--amber);
+}
+
+.status-chip[data-status="accept"],
+.status-chip[data-status="finished"] {
+  background: var(--green-soft);
+  color: var(--green);
+}
+
+.status-chip[data-status="running"] {
+  background: var(--copper-soft);
+  color: var(--copper-text);
+}
+
+.status-chip[data-status="not_started"] {
+  background: var(--system-soft);
+  color: var(--system);
+}
+
+.empty-note {
+  margin: 0;
+  padding: var(--space-4);
+  color: var(--muted);
+}
+
+.screen-title {
+  margin: 0;
+  font: 600 var(--text-heading) / 1.2 var(--font-display);
+}
+
+.screen-note {
+  margin: 0;
+  color: var(--muted);
+}
