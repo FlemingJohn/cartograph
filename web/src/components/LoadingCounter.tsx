@@ -11,9 +11,9 @@ export function LoadingCounter({ count }: { count: number }) {
       aria-valuemax={100}
       aria-valuenow={count}
     >
-      <span className="intro-counter">{count}</span>
-      <span className="intro-progress">
-        <span className="intro-progress-fill" style={{ width: `${count}%` }} />
+      <span className="intro-counter">
+        {count}
+        <span className="intro-counter-percent">%</span>
       </span>
     </motion.div>
   );
