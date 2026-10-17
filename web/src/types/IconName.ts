@@ -1,1 +1,1 @@
-export type IconName = "dashboard" | "approvals" | "simulation" | "fold" | "unfold" | "play";
+export type IconName = "dashboard" | "approvals" | "simulation" | "play" | "arrow";
