@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap");
+
+:root {
+  --background: #FFFFFF;
+  --panel: #FAF7F4;
+  --sunken: #F3EEE9;
+  --ink: #1D1915;
+  --muted: #71665C;
+  --faint: #A0958B;
+  --line: #E7DFD7;
+  --line-strong: #D5CABF;
+  --copper: #B4612A;
+  --copper-text: #93501E;
+  --copper-soft: #F7EADF;
+  --on-copper: #FFFFFF;
+  --patina: #2D7767;
+  --patina-soft: #E2EFEA;
+  --system: #3A4149;
+  --system-soft: #EDEFF1;
+  --red: #B2271E;
+  --red-soft: #F8E5E3;
+  --amber: #9A6400;
+  --amber-soft: #F7EDD8;
+  --green: #2E7640;
+  --green-soft: #E3F1E6;
+
+  --font-display: "IBM Plex Sans Condensed", "Arial Narrow", sans-serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+
+  --text-label: 10.5px;
+  --text-small: 12px;
+  --text-body: 13px;
+  --text-title: 16px;
+  --text-heading: 20px;
+  --text-number: 26px;
+  --label-spacing: 0.07em;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+
+  --line-width: 1px;
+  --accent-width: 3px;
+  --top-bar-height: 52px;
+  --side-panel-width: 212px;
+  --side-panel-folded-width: 52px;
+  --pane-head-height: 36px;
+  --control-height: 32px;
+  --icon-size: 18px;
+  --fold-speed: 0.18s;
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --background: #15120F;
+    --panel: #1C1814;
+    --sunken: #120F0C;
+    --ink: #F1EAE2;
+    --muted: #ABA095;
+    --faint: #7D7268;
+    --line: #2F2822;
+    --line-strong: #40372F;
+    --copper: #D88A4E;
+    --copper-text: #E7A06A;
+    --copper-soft: #34251A;
+    --on-copper: #15120F;
+    --patina: #66B6A4;
+    --patina-soft: #1A2A26;
+    --system: #C4CAD1;
+    --system-soft: #23262A;
+    --red: #EF7F76;
+    --red-soft: #3A1E1B;
+    --amber: #E3B25A;
+    --amber-soft: #352A15;
+    --green: #7FC68E;
+    --green-soft: #1C2D20;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --background: #15120F;
+  --panel: #1C1814;
+  --sunken: #120F0C;
+  --ink: #F1EAE2;
+  --muted: #ABA095;
+  --faint: #7D7268;
+  --line: #2F2822;
+  --line-strong: #40372F;
+  --copper: #D88A4E;
+  --copper-text: #E7A06A;
+  --copper-soft: #34251A;
+  --on-copper: #15120F;
+  --patina: #66B6A4;
+  --patina-soft: #1A2A26;
+  --system: #C4CAD1;
+  --system-soft: #23262A;
+  --red: #EF7F76;
+  --red-soft: #3A1E1B;
+  --amber: #E3B25A;
+  --amber-soft: #352A15;
+  --green: #7FC68E;
+  --green-soft: #1C2D20;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+  border-radius: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--background);
+  color: var(--ink);
+  font: 400 var(--text-body) / 1.45 var(--font-body);
+}
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid var(--copper);
+  outline-offset: 1px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
