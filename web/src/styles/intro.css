@@ -22,10 +22,7 @@
 }
 
 .intro-counter-percent {
-  margin-left: 0.04em;
-  font-size: 0.5em;
-  vertical-align: 0.7em;
-  color: var(--accent);
+  margin-left: 0.02em;
 }
 
 .intro-title {
