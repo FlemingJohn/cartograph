@@ -24,11 +24,30 @@ tools are ready.
 
 ## Oct 18
 
-- Alan: `record_decision`, the simulation rerun, README, deploy backend,
-  blog post
-- Iesvs: dashboard, approval panel, deploy frontend, demo video
+- Alan: `record_decision`, the simulation rerun, README, blog post
+- Iesvs: dashboard, approval panel, record the demo video locally
 - Midday: feature freeze
 - 11 PM: submit
+
+## Model
+
+Gemini through `langchain-google-genai`, free tier, set by `MODEL_NAME` in
+`.env`. Default `gemini-3.8-flash`.
+
+Facts come from the graph, judgment from the model. Graph queries and the
+score formula run with no model call. The model is used in four places only:
+
+- linking a scanner flaw to MITRE attack methods
+- choosing tools for flaws that do not fit the usual checks
+- writing the verdict and fix plan
+- answering questions in plain words
+
+Only the top 20 flaws after the graph pass go to the model, so one run stays
+within the free tier.
+
+## Demo
+
+Run locally and recorded. No hosting.
 
 ## Kept small to fit the time
 
