@@ -3,7 +3,7 @@
   display: grid;
   grid-template-rows: var(--top-bar-height) 1fr;
   background:
-    radial-gradient(ellipse 50% 40% at 15% 0%, var(--copper-glow), transparent 70%),
+    radial-gradient(ellipse 50% 40% at 15% 0%, var(--accent-glow), transparent 70%),
     radial-gradient(circle at 1px 1px, var(--line) 1px, transparent 0) 0 0 / 24px 24px,
     var(--background);
 }
@@ -38,8 +38,8 @@
   height: 22px;
   flex: none;
   border-radius: 7px;
-  background: linear-gradient(135deg, var(--copper-text), var(--copper));
-  box-shadow: 0 0 18px var(--copper-glow);
+  background: linear-gradient(135deg, var(--accent-text), var(--accent));
+  box-shadow: 0 0 18px var(--accent-glow);
 }
 
 .top-bar-name {
