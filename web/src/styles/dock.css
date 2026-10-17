@@ -1,8 +1,16 @@
+.dock-area {
+  position: fixed;
+  left: 50%;
+  bottom: var(--space-5);
+  z-index: 20;
+  translate: -50% 0;
+}
+
 .magnetic-dock {
   display: inline-flex;
-  align-items: flex-start;
+  align-items: flex-end;
   gap: var(--space-3);
-  height: 64px;
+  height: 66px;
   padding: 10px var(--space-3);
   border: var(--line-width) solid var(--line-strong);
   border-radius: 22px;
@@ -16,22 +24,22 @@
   display: grid;
   place-items: center;
   padding: 0;
-  border: var(--line-width) solid var(--line-strong);
+  border: var(--line-width) solid var(--accent);
   border-radius: 14px;
-  background: linear-gradient(180deg, var(--raised), var(--panel));
-  color: var(--muted);
-  transition: color 0.2s ease, border-color 0.2s ease;
+  background: linear-gradient(180deg, var(--gradient-deep), var(--accent));
+  color: var(--on-accent);
+  box-shadow: 0 6px 16px var(--accent-glow);
+  transition: background 0.2s ease, box-shadow 0.2s ease;
 }
 
 .dock-item:hover {
-  color: var(--ink);
+  box-shadow: 0 8px 24px var(--accent-glow);
 }
 
 .dock-item[aria-current="page"] {
-  border-color: var(--accent);
-  background: linear-gradient(180deg, var(--accent-soft), var(--panel));
-  color: var(--accent-text);
-  box-shadow: 0 0 24px var(--accent-glow);
+  border-color: var(--urgent);
+  background: linear-gradient(180deg, var(--accent), var(--urgent));
+  box-shadow: 0 0 0 3px var(--accent-soft), 0 8px 24px var(--accent-glow);
 }
 
 .dock-icon {
@@ -58,7 +66,7 @@
 
 .dock-label {
   position: absolute;
-  top: calc(100% + 14px);
+  bottom: calc(100% + 14px);
   left: 50%;
   translate: -50% 0;
   z-index: 50;
