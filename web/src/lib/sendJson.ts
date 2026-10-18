@@ -5,8 +5,12 @@ export async function sendJson(method: "POST" | "DELETE", path: string, body: ob
     method,
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(body),
+  }).catch(() => {
+    throw new Error(
+      `Could not reach the backend at ${getApiUrl("")}. Start it, or restart it if it runs old code.`,
+    );
   });
   if (!response.ok) {
-    throw new Error(`${path} answered ${response.status}`);
+    throw new Error(`${path} answered ${response.status}: ${await response.text()}`);
   }
 }
