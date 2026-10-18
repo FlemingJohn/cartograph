@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "cartograph": {
+      "command": "C:\\Users\\Immanuel AJ\\Desktop\\cartograph\\.venv\\Scripts\\python.exe",
+      "args": [
+        "-m",
+        "cartograph_mcp.serve_stdio"
+      ],
+      "env": {
+        "PYTHONPATH": "C:\\Users\\Immanuel AJ\\Desktop\\cartograph"
+      }
+    }
+  }
+}
