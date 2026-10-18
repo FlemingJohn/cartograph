@@ -55,7 +55,8 @@ def load_scan(scan_file=None):
         graph.query(
             "UNWIND $batch AS item "
             "MERGE (f:Finding {id: item.id}) "
-            "SET f.title = item.title, f.severity = item.severity, f.scan_id = item.scan_id "
+            "SET f.title = item.title, f.severity = item.severity, f.scan_id = item.scan_id, "
+            "f.service_id = item.service_id "
             "WITH item, f "
             "MATCH (sc:Scan {id: item.scan_id}) "
             "MERGE (f)-[:FOUND_IN]->(sc) "
