@@ -2,6 +2,7 @@ from pydantic import BaseModel, Field
 
 
 class AttackerVerdict(BaseModel):
+    finding_id: str
     technique_ids: list[str] = Field(
         description="MITRE ATT&CK technique ids this flaw enables, such as T1190, "
         "including any the scanner did not link"
