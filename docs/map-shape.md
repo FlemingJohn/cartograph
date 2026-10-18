@@ -14,7 +14,7 @@ The FalkorDB graph named by `FALKORDB_GRAPH` (default `cartograph`).
 | `DataStore` | `id`, `name`, `has_personal_data` |
 | `LogSource` | `id`, `name` |
 | `Team` | `id`, `name` |
-| `Finding` | `id`, `title`, `severity`, `scan_id` |
+| `Finding` | `id`, `title`, `severity`, `scan_id`, `service_id` |
 | `Scan` | `id`, `started_at` |
 | `Technique` | `id`, `name`, `tactics` |
 | `Actor` | `id`, `name`, `kind` |
