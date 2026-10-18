@@ -1,0 +1,28 @@
+.rank-change {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  padding: var(--space-6) var(--space-5);
+  flex-wrap: wrap;
+}
+
+.rank-number {
+  font: 700 clamp(56px, 8vw, 96px) / 1 var(--font-display);
+  letter-spacing: -0.04em;
+  color: var(--accent);
+}
+
+.rank-number-before {
+  color: var(--faint);
+}
+
+.rank-arrow {
+  font: 700 40px / 1 var(--font-display);
+  color: var(--faint);
+}
+
+.rank-details {
+  display: grid;
+  gap: var(--space-2);
+  justify-items: start;
+}
