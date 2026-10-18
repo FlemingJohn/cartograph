@@ -10,8 +10,11 @@ Built for Graph Hacks 2026, Track 1: Agents That Act on Connected Data.
 ## Setup
 
     cp .env.example .env
-    uv sync
-    uv run python -m graph.seed_graph
+    pip install -e .
+    python -m graph.seed_graph
+
+Fill in your FalkorDB Cloud credentials, Google Gemini API key, and Cyber MCP URL
+in `.env`.
 
 ## Folders
 
@@ -24,6 +27,14 @@ Built for Graph Hacks 2026, Track 1: Agents That Act on Connected Data.
 | `web/` | The dashboard |
 | `docs/` | Map shape, tool contracts and state shape |
 | `vendor/cyber-mcp-tools/` | MITRE ATT&CK and D3FEND data and tools |
+
+## Running the tool server
+
+    python -m tools.make_server
+
+## Running tests
+
+    python -m pytest tests/tools/ -v
 
 ## Credits
 
