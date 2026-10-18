@@ -1,4 +1,5 @@
 import os
+from functools import cache
 
 from dotenv import load_dotenv
 from falkordb import FalkorDB
@@ -6,6 +7,7 @@ from falkordb import FalkorDB
 load_dotenv()
 
 
+@cache
 def get_database():
     return FalkorDB(
         host=os.environ["FALKORDB_HOST"],
