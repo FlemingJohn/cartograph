@@ -1,4 +1,6 @@
 import os
+from collections.abc import AsyncIterator
+from contextlib import asynccontextmanager
 
 import truststore
 from dotenv import load_dotenv
@@ -8,14 +10,16 @@ from agents.connect_tools import connect_tools
 from agents.context.app_context import AppContext
 
 
-async def make_app_context() -> AppContext:
+@asynccontextmanager
+async def make_app_context() -> AsyncIterator[AppContext]:
     load_dotenv()
     truststore.inject_into_ssl()
-    return AppContext(
-        model=make_model(),
-        tools=await connect_tools(),
-        graph_name=os.environ.get("FALKORDB_GRAPH", "cartograph"),
-    )
+    async with connect_tools() as tools:
+        yield AppContext(
+            model=make_model(),
+            tools=tools,
+            graph_name=os.environ.get("FALKORDB_GRAPH", "cartograph"),
+        )
 
 
 def make_model() -> ChatGoogleGenerativeAI:
