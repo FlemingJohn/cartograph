@@ -12,13 +12,13 @@ from agents.nodes.plan_actions import plan_actions
 from agents.nodes.score_findings import score_findings
 from agents.nodes.take_actions import take_actions
 from agents.nodes.write_report import write_report
-from agents.routing.send_each_finding import CHECKERS, send_each_finding
+from agents.routing.send_shortlist import CHECKERS, send_shortlist
 from agents.state.triage_input import TriageInput
 from agents.state.triage_output import TriageOutput
 from agents.state.triage_state import TriageState
 
 TOOL_RETRY = RetryPolicy(max_attempts=3)
-MODEL_RETRY = RetryPolicy(max_attempts=6, initial_interval=2.0, max_interval=60.0)
+MODEL_RETRY = RetryPolicy(max_attempts=3, initial_interval=5.0, max_interval=30.0)
 
 
 def make_triage_graph(checkpointer=None):
@@ -41,7 +41,7 @@ def make_triage_graph(checkpointer=None):
     builder.add_edge(START, "load_scan")
     builder.add_edge("load_scan", "measure_findings")
     builder.add_edge("measure_findings", "score_findings")
-    builder.add_conditional_edges("score_findings", send_each_finding, CHECKERS)
+    builder.add_conditional_edges("score_findings", send_shortlist, CHECKERS)
     builder.add_edge(CHECKERS, "plan_actions")
     builder.add_edge("plan_actions", "ask_approval")
     builder.add_edge("take_actions", "write_report")
