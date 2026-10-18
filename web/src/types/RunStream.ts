@@ -6,4 +6,5 @@ export interface RunStream {
   runStatus: RunStatus;
   startRun: () => Promise<void>;
   answerApproval: (isApproved: boolean) => Promise<void>;
+  reportFailure: (error: unknown) => void;
 }
