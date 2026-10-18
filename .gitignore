@@ -8,3 +8,4 @@ node_modules/
 web/dist/
 vendor/cyber-mcp-tools/node_modules/
 vendor/cyber-mcp-tools/dist/
+data/tickets.jsonl
