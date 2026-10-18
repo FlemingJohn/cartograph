@@ -10,8 +10,7 @@ Built for Graph Hacks 2026, Track 1: Agents That Act on Connected Data.
 ## Setup
 
     cp .env.example .env
-    pip install -e .
-    python -m graph.seed_graph
+    uv sync
 
 Fill in your FalkorDB Cloud credentials, Google Gemini API key, and Cyber MCP URL
 in `.env`.
@@ -27,6 +26,37 @@ in `.env`.
 | `web/` | The dashboard |
 | `docs/` | Map shape, tool contracts and state shape |
 | `vendor/cyber-mcp-tools/` | MITRE ATT&CK and D3FEND data and tools |
+
+## Running the app
+
+Download the MITRE data the seed reads, then rebuild the map. The rebuild
+wipes the graph and loads everything again, so it is also the backup.
+
+    git submodule update --init
+    uv run python -m graph.seed_graph
+
+Start the backend. It starts the tool server itself.
+
+    uv run uvicorn api.make_app:app
+
+Start the dashboard in a second terminal and open http://localhost:5180.
+
+    cd web
+    npm install
+    npm run dev
+
+On networks that re-sign secure traffic, set `UV_SYSTEM_CERTS=1` before the
+`uv` commands and `NODE_OPTIONS=--use-system-ca` before the `npm` ones.
+
+## Demo order
+
+1. Press **Try now**, then **Start triage**. The agent steps stream into the
+   activity log and the run pauses for approval.
+2. Pick the payments flaw to see its route from the internet to card data.
+3. Open **Approvals** and approve the plan. Decisions are saved to the graph.
+4. Open **Simulation** and press **Link and rerun**. The report generator
+   gains a route from the front door and its rank jumps. **Undo the link**
+   puts the map back.
 
 ## Running the tool server
 
