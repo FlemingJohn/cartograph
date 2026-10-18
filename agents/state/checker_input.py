@@ -4,4 +4,4 @@ from agents.state.measurement import Measurement
 
 
 class CheckerInput(TypedDict):
-    measurement: Measurement
+    measurements: list[Measurement]
