@@ -79,7 +79,9 @@ schema as a map.
 `ask_approval` stops the run with `interrupt()` and hands out the `plan`.
 The run resumes with `Command(resume={"is_approved": true})` or `false`.
 
-## Contract additions asked of Alan
+## Reading the scan
 
-`list_findings`, inputs `scan_id`, `result` a list of `Finding`. `load_scan`
-needs it to read the scan, and the six tools have no way to list flaws.
+`load_scan` uses `list_findings`, a read-only query in
+`agents/tools/list_findings.py` that returns every `Finding` in the scan with
+its `service_id` and linked techniques. It runs on the agent side because the
+six server tools have no way to list flaws.
