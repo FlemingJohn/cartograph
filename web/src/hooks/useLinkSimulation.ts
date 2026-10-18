@@ -8,8 +8,7 @@ export function useLinkSimulation(run: RunStream, currentRank: number | null) {
 
   async function changeLink(method: "POST" | "DELETE") {
     setRankBefore(currentRank);
-    await sendJson(method, "/simulations/link", simulatedLink);
-    await run.startRun();
+    await sendJson(method, "/simulations/link", simulatedLink).then(run.startRun, run.reportFailure);
   }
 
   return {
