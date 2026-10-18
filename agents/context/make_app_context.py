@@ -8,11 +8,13 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 
 from agents.connect_tools import connect_tools
 from agents.context.app_context import AppContext
+from agents.context.check_settings import check_settings
 
 
 @asynccontextmanager
 async def make_app_context() -> AsyncIterator[AppContext]:
     load_dotenv()
+    check_settings()
     truststore.inject_into_ssl()
     async with connect_tools() as tools:
         yield AppContext(
