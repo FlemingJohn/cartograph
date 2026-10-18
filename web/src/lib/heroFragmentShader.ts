@@ -4,6 +4,8 @@ uniform vec3 uColor1;
 uniform vec3 uColor2;
 varying vec2 vUv;
 
+const float rightwardSpeed = 0.15;
+
 vec3 permute(vec3 x) { return mod(((x * 34.0) + 1.0) * x, 289.0); }
 
 float snoise(vec2 v) {
@@ -42,7 +44,8 @@ float bayerDither(vec2 coord) {
 
 void main() {
   vec2 uv = vUv;
-  float noise = snoise(uv * 1.5 + vec2(uTime * 0.05, uTime * 0.03)) * 0.25;
+  vec2 drift = vec2(-uTime * rightwardSpeed, uTime * 0.02);
+  float noise = snoise(uv * 1.5 + drift) * 0.25;
   float gradient = (uv.x + uv.y) * 0.5 * 1.2 + noise;
 
   vec3 deepBlue = uColor1;
