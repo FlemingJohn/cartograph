@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { getApiUrl } from "../lib/getApiUrl";
 import { getRunStatus } from "../lib/getRunStatus";
-import { postJson } from "../lib/postJson";
+import { sendJson } from "../lib/sendJson";
 import type { AgentStep } from "../types/AgentStep";
 import type { RunStream } from "../types/RunStream";
 
@@ -29,13 +29,13 @@ export function useRunStream(scanId: string): RunStream {
   const startRun = useCallback(async () => {
     sourceRef.current?.close();
     setSteps([]);
-    await postJson("/runs", { scan_id: scanId });
+    await sendJson("POST", "/runs", { scan_id: scanId });
     openStream();
   }, [scanId, openStream]);
 
   const answerApproval = useCallback(
     async (isApproved: boolean) => {
-      await postJson(`/runs/${scanId}/approve`, { is_approved: isApproved });
+      await sendJson("POST", `/runs/${scanId}/approve`, { is_approved: isApproved });
     },
     [scanId],
   );
