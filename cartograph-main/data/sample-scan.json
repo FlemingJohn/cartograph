@@ -1,0 +1,2575 @@
+{
+  "id": "scan-2026-10-18-001",
+  "started_at": "2026-10-18T00:00:00Z",
+  "flaw_count": 214,
+  "flaws": [
+    {
+      "id": "flaw-payments-001",
+      "title": "Spring Framework Remote Code Execution in Payment Gateway Integration",
+      "severity": 6.5,
+      "service_id": "payments-service",
+      "library": {
+        "id": "lib-spring-web",
+        "name": "spring-web",
+        "version": "5.3.18"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-report-001",
+      "title": "Log4j Remote Code Execution in Internal Reporting Template Processor",
+      "severity": 9.8,
+      "service_id": "report-generator",
+      "library": {
+        "id": "lib-log4j-core",
+        "name": "log4j-core",
+        "version": "2.14.1"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-002",
+      "title": "Security Vulnerability CVE-2026-1002 in netty-codec-http",
+      "severity": 2.2,
+      "service_id": "pricing-service",
+      "library": {
+        "id": "lib-netty",
+        "name": "netty-codec-http",
+        "version": "4.1.65.Final"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-003",
+      "title": "Security Vulnerability CVE-2026-1003 in commons-text",
+      "severity": 3.7,
+      "service_id": "profile-service",
+      "library": {
+        "id": "lib-commons-text",
+        "name": "commons-text",
+        "version": "1.9"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-004",
+      "title": "Security Vulnerability CVE-2026-1004 in netty-codec-http",
+      "severity": 7.1,
+      "service_id": "comments-service",
+      "library": {
+        "id": "lib-netty",
+        "name": "netty-codec-http",
+        "version": "4.1.65.Final"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-005",
+      "title": "Security Vulnerability CVE-2026-1005 in netty-codec-http",
+      "severity": 6.4,
+      "service_id": "email-service",
+      "library": {
+        "id": "lib-netty",
+        "name": "netty-codec-http",
+        "version": "4.1.65.Final"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-006",
+      "title": "Security Vulnerability CVE-2026-1006 in jackson-databind",
+      "severity": 2.7,
+      "service_id": "api-gateway",
+      "library": {
+        "id": "lib-jackson",
+        "name": "jackson-databind",
+        "version": "2.12.3"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-007",
+      "title": "Security Vulnerability CVE-2026-1007 in jackson-databind",
+      "severity": 6.2,
+      "service_id": "user-service",
+      "library": {
+        "id": "lib-jackson",
+        "name": "jackson-databind",
+        "version": "2.12.3"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-008",
+      "title": "Security Vulnerability CVE-2026-1008 in postgresql",
+      "severity": 3.7,
+      "service_id": "ratings-service",
+      "library": {
+        "id": "lib-postgresql",
+        "name": "postgresql",
+        "version": "42.2.20"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-009",
+      "title": "Security Vulnerability CVE-2026-1009 in jjwt",
+      "severity": 8.1,
+      "service_id": "sms-service",
+      "library": {
+        "id": "lib-json-jwt",
+        "name": "jjwt",
+        "version": "0.9.1"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-010",
+      "title": "Security Vulnerability CVE-2026-1010 in struts2-core",
+      "severity": 7.2,
+      "service_id": "web-gateway",
+      "library": {
+        "id": "lib-struts",
+        "name": "struts2-core",
+        "version": "2.5.26"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-011",
+      "title": "Security Vulnerability CVE-2026-1011 in jjwt",
+      "severity": 3.2,
+      "service_id": "catalog-service",
+      "library": {
+        "id": "lib-json-jwt",
+        "name": "jjwt",
+        "version": "0.9.1"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-012",
+      "title": "Security Vulnerability CVE-2026-1012 in grpc-netty",
+      "severity": 2.8,
+      "service_id": "media-service",
+      "library": {
+        "id": "lib-grpc",
+        "name": "grpc-netty",
+        "version": "1.38.0"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-013",
+      "title": "Security Vulnerability CVE-2026-1013 in netty-codec-http",
+      "severity": 4.7,
+      "service_id": "order-service",
+      "library": {
+        "id": "lib-netty",
+        "name": "netty-codec-http",
+        "version": "4.1.65.Final"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-014",
+      "title": "Security Vulnerability CVE-2026-1014 in jjwt",
+      "severity": 8.1,
+      "service_id": "cart-service",
+      "library": {
+        "id": "lib-json-jwt",
+        "name": "jjwt",
+        "version": "0.9.1"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-015",
+      "title": "Security Vulnerability CVE-2026-1015 in lettuce-core",
+      "severity": 6.0,
+      "service_id": "comments-service",
+      "library": {
+        "id": "lib-redis-client",
+        "name": "lettuce-core",
+        "version": "6.1.2.RELEASE"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-016",
+      "title": "Security Vulnerability CVE-2026-1016 in netty-codec-http",
+      "severity": 6.1,
+      "service_id": "order-service",
+      "library": {
+        "id": "lib-netty",
+        "name": "netty-codec-http",
+        "version": "4.1.65.Final"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-017",
+      "title": "Security Vulnerability CVE-2026-1017 in grpc-netty",
+      "severity": 6.3,
+      "service_id": "metrics-collector",
+      "library": {
+        "id": "lib-grpc",
+        "name": "grpc-netty",
+        "version": "1.38.0"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-018",
+      "title": "Security Vulnerability CVE-2026-1018 in netty-codec-http",
+      "severity": 2.3,
+      "service_id": "ratings-service",
+      "library": {
+        "id": "lib-netty",
+        "name": "netty-codec-http",
+        "version": "4.1.65.Final"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-019",
+      "title": "Security Vulnerability CVE-2026-1019 in jjwt",
+      "severity": 9.4,
+      "service_id": "user-service",
+      "library": {
+        "id": "lib-json-jwt",
+        "name": "jjwt",
+        "version": "0.9.1"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-020",
+      "title": "Security Vulnerability CVE-2026-1020 in commons-text",
+      "severity": 8.5,
+      "service_id": "audit-logger",
+      "library": {
+        "id": "lib-commons-text",
+        "name": "commons-text",
+        "version": "1.9"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-021",
+      "title": "Security Vulnerability CVE-2026-1021 in jjwt",
+      "severity": 5.4,
+      "service_id": "order-service",
+      "library": {
+        "id": "lib-json-jwt",
+        "name": "jjwt",
+        "version": "0.9.1"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-022",
+      "title": "Security Vulnerability CVE-2026-1022 in grpc-netty",
+      "severity": 3.2,
+      "service_id": "metrics-collector",
+      "library": {
+        "id": "lib-grpc",
+        "name": "grpc-netty",
+        "version": "1.38.0"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-023",
+      "title": "Security Vulnerability CVE-2026-1023 in commons-text",
+      "severity": 7.0,
+      "service_id": "cart-service",
+      "library": {
+        "id": "lib-commons-text",
+        "name": "commons-text",
+        "version": "1.9"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-024",
+      "title": "Security Vulnerability CVE-2026-1024 in netty-codec-http",
+      "severity": 6.6,
+      "service_id": "ratings-service",
+      "library": {
+        "id": "lib-netty",
+        "name": "netty-codec-http",
+        "version": "4.1.65.Final"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-025",
+      "title": "Security Vulnerability CVE-2026-1025 in commons-text",
+      "severity": 3.2,
+      "service_id": "billing-service",
+      "library": {
+        "id": "lib-commons-text",
+        "name": "commons-text",
+        "version": "1.9"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-026",
+      "title": "Security Vulnerability CVE-2026-1026 in jjwt",
+      "severity": 9.4,
+      "service_id": "order-service",
+      "library": {
+        "id": "lib-json-jwt",
+        "name": "jjwt",
+        "version": "0.9.1"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-027",
+      "title": "Security Vulnerability CVE-2026-1027 in commons-text",
+      "severity": 7.1,
+      "service_id": "pricing-service",
+      "library": {
+        "id": "lib-commons-text",
+        "name": "commons-text",
+        "version": "1.9"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-028",
+      "title": "Security Vulnerability CVE-2026-1028 in jackson-databind",
+      "severity": 3.7,
+      "service_id": "metrics-collector",
+      "library": {
+        "id": "lib-jackson",
+        "name": "jackson-databind",
+        "version": "2.12.3"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-029",
+      "title": "Security Vulnerability CVE-2026-1029 in grpc-netty",
+      "severity": 5.0,
+      "service_id": "api-gateway",
+      "library": {
+        "id": "lib-grpc",
+        "name": "grpc-netty",
+        "version": "1.38.0"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-030",
+      "title": "Security Vulnerability CVE-2026-1030 in commons-text",
+      "severity": 8.8,
+      "service_id": "auth-service",
+      "library": {
+        "id": "lib-commons-text",
+        "name": "commons-text",
+        "version": "1.9"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-031",
+      "title": "Security Vulnerability CVE-2026-1031 in grpc-netty",
+      "severity": 3.6,
+      "service_id": "sms-service",
+      "library": {
+        "id": "lib-grpc",
+        "name": "grpc-netty",
+        "version": "1.38.0"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-032",
+      "title": "Security Vulnerability CVE-2026-1032 in postgresql",
+      "severity": 8.6,
+      "service_id": "warehouse-service",
+      "library": {
+        "id": "lib-postgresql",
+        "name": "postgresql",
+        "version": "42.2.20"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-033",
+      "title": "Security Vulnerability CVE-2026-1033 in lettuce-core",
+      "severity": 3.1,
+      "service_id": "pricing-service",
+      "library": {
+        "id": "lib-redis-client",
+        "name": "lettuce-core",
+        "version": "6.1.2.RELEASE"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-034",
+      "title": "Security Vulnerability CVE-2026-1034 in commons-text",
+      "severity": 7.6,
+      "service_id": "card-vault-service",
+      "library": {
+        "id": "lib-commons-text",
+        "name": "commons-text",
+        "version": "1.9"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-035",
+      "title": "Security Vulnerability CVE-2026-1035 in jjwt",
+      "severity": 7.6,
+      "service_id": "email-service",
+      "library": {
+        "id": "lib-json-jwt",
+        "name": "jjwt",
+        "version": "0.9.1"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-036",
+      "title": "Security Vulnerability CVE-2026-1036 in postgresql",
+      "severity": 4.7,
+      "service_id": "shipping-service",
+      "library": {
+        "id": "lib-postgresql",
+        "name": "postgresql",
+        "version": "42.2.20"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-037",
+      "title": "Security Vulnerability CVE-2026-1037 in lettuce-core",
+      "severity": 2.7,
+      "service_id": "card-vault-service",
+      "library": {
+        "id": "lib-redis-client",
+        "name": "lettuce-core",
+        "version": "6.1.2.RELEASE"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-038",
+      "title": "Security Vulnerability CVE-2026-1038 in netty-codec-http",
+      "severity": 3.1,
+      "service_id": "api-gateway",
+      "library": {
+        "id": "lib-netty",
+        "name": "netty-codec-http",
+        "version": "4.1.65.Final"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-039",
+      "title": "Security Vulnerability CVE-2026-1039 in postgresql",
+      "severity": 6.5,
+      "service_id": "billing-service",
+      "library": {
+        "id": "lib-postgresql",
+        "name": "postgresql",
+        "version": "42.2.20"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-040",
+      "title": "Security Vulnerability CVE-2026-1040 in postgresql",
+      "severity": 6.5,
+      "service_id": "order-service",
+      "library": {
+        "id": "lib-postgresql",
+        "name": "postgresql",
+        "version": "42.2.20"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-041",
+      "title": "Security Vulnerability CVE-2026-1041 in jjwt",
+      "severity": 9.3,
+      "service_id": "inventory-service",
+      "library": {
+        "id": "lib-json-jwt",
+        "name": "jjwt",
+        "version": "0.9.1"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-042",
+      "title": "Security Vulnerability CVE-2026-1042 in jackson-databind",
+      "severity": 7.1,
+      "service_id": "audit-logger",
+      "library": {
+        "id": "lib-jackson",
+        "name": "jackson-databind",
+        "version": "2.12.3"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-043",
+      "title": "Security Vulnerability CVE-2026-1043 in jjwt",
+      "severity": 7.8,
+      "service_id": "checkout-service",
+      "library": {
+        "id": "lib-json-jwt",
+        "name": "jjwt",
+        "version": "0.9.1"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-044",
+      "title": "Security Vulnerability CVE-2026-1044 in netty-codec-http",
+      "severity": 4.2,
+      "service_id": "catalog-service",
+      "library": {
+        "id": "lib-netty",
+        "name": "netty-codec-http",
+        "version": "4.1.65.Final"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-045",
+      "title": "Security Vulnerability CVE-2026-1045 in lettuce-core",
+      "severity": 2.0,
+      "service_id": "billing-service",
+      "library": {
+        "id": "lib-redis-client",
+        "name": "lettuce-core",
+        "version": "6.1.2.RELEASE"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-046",
+      "title": "Security Vulnerability CVE-2026-1046 in jjwt",
+      "severity": 9.3,
+      "service_id": "comments-service",
+      "library": {
+        "id": "lib-json-jwt",
+        "name": "jjwt",
+        "version": "0.9.1"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-047",
+      "title": "Security Vulnerability CVE-2026-1047 in struts2-core",
+      "severity": 5.8,
+      "service_id": "media-service",
+      "library": {
+        "id": "lib-struts",
+        "name": "struts2-core",
+        "version": "2.5.26"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-048",
+      "title": "Security Vulnerability CVE-2026-1048 in jjwt",
+      "severity": 8.3,
+      "service_id": "checkout-service",
+      "library": {
+        "id": "lib-json-jwt",
+        "name": "jjwt",
+        "version": "0.9.1"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-049",
+      "title": "Security Vulnerability CVE-2026-1049 in commons-text",
+      "severity": 3.1,
+      "service_id": "notification-service",
+      "library": {
+        "id": "lib-commons-text",
+        "name": "commons-text",
+        "version": "1.9"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-050",
+      "title": "Security Vulnerability CVE-2026-1050 in struts2-core",
+      "severity": 6.0,
+      "service_id": "media-service",
+      "library": {
+        "id": "lib-struts",
+        "name": "struts2-core",
+        "version": "2.5.26"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-051",
+      "title": "Security Vulnerability CVE-2026-1051 in jackson-databind",
+      "severity": 6.5,
+      "service_id": "media-service",
+      "library": {
+        "id": "lib-jackson",
+        "name": "jackson-databind",
+        "version": "2.12.3"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-052",
+      "title": "Security Vulnerability CVE-2026-1052 in jackson-databind",
+      "severity": 2.8,
+      "service_id": "warehouse-service",
+      "library": {
+        "id": "lib-jackson",
+        "name": "jackson-databind",
+        "version": "2.12.3"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-053",
+      "title": "Security Vulnerability CVE-2026-1053 in jjwt",
+      "severity": 3.8,
+      "service_id": "cart-service",
+      "library": {
+        "id": "lib-json-jwt",
+        "name": "jjwt",
+        "version": "0.9.1"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-054",
+      "title": "Security Vulnerability CVE-2026-1054 in netty-codec-http",
+      "severity": 2.6,
+      "service_id": "user-service",
+      "library": {
+        "id": "lib-netty",
+        "name": "netty-codec-http",
+        "version": "4.1.65.Final"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-055",
+      "title": "Security Vulnerability CVE-2026-1055 in netty-codec-http",
+      "severity": 9.3,
+      "service_id": "warehouse-service",
+      "library": {
+        "id": "lib-netty",
+        "name": "netty-codec-http",
+        "version": "4.1.65.Final"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-056",
+      "title": "Security Vulnerability CVE-2026-1056 in struts2-core",
+      "severity": 3.0,
+      "service_id": "email-service",
+      "library": {
+        "id": "lib-struts",
+        "name": "struts2-core",
+        "version": "2.5.26"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-057",
+      "title": "Security Vulnerability CVE-2026-1057 in struts2-core",
+      "severity": 4.0,
+      "service_id": "warehouse-service",
+      "library": {
+        "id": "lib-struts",
+        "name": "struts2-core",
+        "version": "2.5.26"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-058",
+      "title": "Security Vulnerability CVE-2026-1058 in postgresql",
+      "severity": 9.2,
+      "service_id": "audit-logger",
+      "library": {
+        "id": "lib-postgresql",
+        "name": "postgresql",
+        "version": "42.2.20"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-059",
+      "title": "Security Vulnerability CVE-2026-1059 in commons-text",
+      "severity": 7.3,
+      "service_id": "email-service",
+      "library": {
+        "id": "lib-commons-text",
+        "name": "commons-text",
+        "version": "1.9"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-060",
+      "title": "Security Vulnerability CVE-2026-1060 in grpc-netty",
+      "severity": 5.3,
+      "service_id": "order-service",
+      "library": {
+        "id": "lib-grpc",
+        "name": "grpc-netty",
+        "version": "1.38.0"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-061",
+      "title": "Security Vulnerability CVE-2026-1061 in lettuce-core",
+      "severity": 2.9,
+      "service_id": "notification-service",
+      "library": {
+        "id": "lib-redis-client",
+        "name": "lettuce-core",
+        "version": "6.1.2.RELEASE"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-062",
+      "title": "Security Vulnerability CVE-2026-1062 in netty-codec-http",
+      "severity": 4.5,
+      "service_id": "user-service",
+      "library": {
+        "id": "lib-netty",
+        "name": "netty-codec-http",
+        "version": "4.1.65.Final"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-063",
+      "title": "Security Vulnerability CVE-2026-1063 in commons-text",
+      "severity": 6.4,
+      "service_id": "sms-service",
+      "library": {
+        "id": "lib-commons-text",
+        "name": "commons-text",
+        "version": "1.9"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-064",
+      "title": "Security Vulnerability CVE-2026-1064 in netty-codec-http",
+      "severity": 7.3,
+      "service_id": "web-gateway",
+      "library": {
+        "id": "lib-netty",
+        "name": "netty-codec-http",
+        "version": "4.1.65.Final"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-065",
+      "title": "Security Vulnerability CVE-2026-1065 in commons-text",
+      "severity": 2.5,
+      "service_id": "api-gateway",
+      "library": {
+        "id": "lib-commons-text",
+        "name": "commons-text",
+        "version": "1.9"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-066",
+      "title": "Security Vulnerability CVE-2026-1066 in grpc-netty",
+      "severity": 2.5,
+      "service_id": "api-gateway",
+      "library": {
+        "id": "lib-grpc",
+        "name": "grpc-netty",
+        "version": "1.38.0"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-067",
+      "title": "Security Vulnerability CVE-2026-1067 in jjwt",
+      "severity": 7.0,
+      "service_id": "user-service",
+      "library": {
+        "id": "lib-json-jwt",
+        "name": "jjwt",
+        "version": "0.9.1"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-068",
+      "title": "Security Vulnerability CVE-2026-1068 in struts2-core",
+      "severity": 7.4,
+      "service_id": "ledger-service",
+      "library": {
+        "id": "lib-struts",
+        "name": "struts2-core",
+        "version": "2.5.26"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-069",
+      "title": "Security Vulnerability CVE-2026-1069 in lettuce-core",
+      "severity": 3.8,
+      "service_id": "sms-service",
+      "library": {
+        "id": "lib-redis-client",
+        "name": "lettuce-core",
+        "version": "6.1.2.RELEASE"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-070",
+      "title": "Security Vulnerability CVE-2026-1070 in postgresql",
+      "severity": 3.4,
+      "service_id": "warehouse-service",
+      "library": {
+        "id": "lib-postgresql",
+        "name": "postgresql",
+        "version": "42.2.20"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-071",
+      "title": "Security Vulnerability CVE-2026-1071 in postgresql",
+      "severity": 4.7,
+      "service_id": "checkout-service",
+      "library": {
+        "id": "lib-postgresql",
+        "name": "postgresql",
+        "version": "42.2.20"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-072",
+      "title": "Security Vulnerability CVE-2026-1072 in lettuce-core",
+      "severity": 8.5,
+      "service_id": "shipping-service",
+      "library": {
+        "id": "lib-redis-client",
+        "name": "lettuce-core",
+        "version": "6.1.2.RELEASE"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-073",
+      "title": "Security Vulnerability CVE-2026-1073 in netty-codec-http",
+      "severity": 2.5,
+      "service_id": "api-gateway",
+      "library": {
+        "id": "lib-netty",
+        "name": "netty-codec-http",
+        "version": "4.1.65.Final"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-074",
+      "title": "Security Vulnerability CVE-2026-1074 in grpc-netty",
+      "severity": 8.0,
+      "service_id": "comments-service",
+      "library": {
+        "id": "lib-grpc",
+        "name": "grpc-netty",
+        "version": "1.38.0"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-075",
+      "title": "Security Vulnerability CVE-2026-1075 in commons-text",
+      "severity": 3.4,
+      "service_id": "checkout-service",
+      "library": {
+        "id": "lib-commons-text",
+        "name": "commons-text",
+        "version": "1.9"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-076",
+      "title": "Security Vulnerability CVE-2026-1076 in lettuce-core",
+      "severity": 3.1,
+      "service_id": "email-service",
+      "library": {
+        "id": "lib-redis-client",
+        "name": "lettuce-core",
+        "version": "6.1.2.RELEASE"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-077",
+      "title": "Security Vulnerability CVE-2026-1077 in jjwt",
+      "severity": 5.5,
+      "service_id": "billing-service",
+      "library": {
+        "id": "lib-json-jwt",
+        "name": "jjwt",
+        "version": "0.9.1"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-078",
+      "title": "Security Vulnerability CVE-2026-1078 in netty-codec-http",
+      "severity": 5.3,
+      "service_id": "audit-logger",
+      "library": {
+        "id": "lib-netty",
+        "name": "netty-codec-http",
+        "version": "4.1.65.Final"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-079",
+      "title": "Security Vulnerability CVE-2026-1079 in netty-codec-http",
+      "severity": 2.4,
+      "service_id": "audit-logger",
+      "library": {
+        "id": "lib-netty",
+        "name": "netty-codec-http",
+        "version": "4.1.65.Final"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-080",
+      "title": "Security Vulnerability CVE-2026-1080 in jackson-databind",
+      "severity": 9.3,
+      "service_id": "email-service",
+      "library": {
+        "id": "lib-jackson",
+        "name": "jackson-databind",
+        "version": "2.12.3"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-081",
+      "title": "Security Vulnerability CVE-2026-1081 in commons-text",
+      "severity": 3.2,
+      "service_id": "media-service",
+      "library": {
+        "id": "lib-commons-text",
+        "name": "commons-text",
+        "version": "1.9"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-082",
+      "title": "Security Vulnerability CVE-2026-1082 in lettuce-core",
+      "severity": 3.6,
+      "service_id": "warehouse-service",
+      "library": {
+        "id": "lib-redis-client",
+        "name": "lettuce-core",
+        "version": "6.1.2.RELEASE"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-083",
+      "title": "Security Vulnerability CVE-2026-1083 in jackson-databind",
+      "severity": 3.2,
+      "service_id": "order-service",
+      "library": {
+        "id": "lib-jackson",
+        "name": "jackson-databind",
+        "version": "2.12.3"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-084",
+      "title": "Security Vulnerability CVE-2026-1084 in postgresql",
+      "severity": 4.0,
+      "service_id": "web-gateway",
+      "library": {
+        "id": "lib-postgresql",
+        "name": "postgresql",
+        "version": "42.2.20"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-085",
+      "title": "Security Vulnerability CVE-2026-1085 in lettuce-core",
+      "severity": 4.1,
+      "service_id": "assets-cdn-origin",
+      "library": {
+        "id": "lib-redis-client",
+        "name": "lettuce-core",
+        "version": "6.1.2.RELEASE"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-086",
+      "title": "Security Vulnerability CVE-2026-1086 in lettuce-core",
+      "severity": 3.2,
+      "service_id": "ratings-service",
+      "library": {
+        "id": "lib-redis-client",
+        "name": "lettuce-core",
+        "version": "6.1.2.RELEASE"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-087",
+      "title": "Security Vulnerability CVE-2026-1087 in commons-text",
+      "severity": 9.3,
+      "service_id": "search-service",
+      "library": {
+        "id": "lib-commons-text",
+        "name": "commons-text",
+        "version": "1.9"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-088",
+      "title": "Security Vulnerability CVE-2026-1088 in jackson-databind",
+      "severity": 7.6,
+      "service_id": "sms-service",
+      "library": {
+        "id": "lib-jackson",
+        "name": "jackson-databind",
+        "version": "2.12.3"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-089",
+      "title": "Security Vulnerability CVE-2026-1089 in jackson-databind",
+      "severity": 6.4,
+      "service_id": "api-gateway",
+      "library": {
+        "id": "lib-jackson",
+        "name": "jackson-databind",
+        "version": "2.12.3"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-090",
+      "title": "Security Vulnerability CVE-2026-1090 in struts2-core",
+      "severity": 2.4,
+      "service_id": "notification-service",
+      "library": {
+        "id": "lib-struts",
+        "name": "struts2-core",
+        "version": "2.5.26"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-091",
+      "title": "Security Vulnerability CVE-2026-1091 in netty-codec-http",
+      "severity": 8.4,
+      "service_id": "notification-service",
+      "library": {
+        "id": "lib-netty",
+        "name": "netty-codec-http",
+        "version": "4.1.65.Final"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-092",
+      "title": "Security Vulnerability CVE-2026-1092 in netty-codec-http",
+      "severity": 7.1,
+      "service_id": "auth-service",
+      "library": {
+        "id": "lib-netty",
+        "name": "netty-codec-http",
+        "version": "4.1.65.Final"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-093",
+      "title": "Security Vulnerability CVE-2026-1093 in postgresql",
+      "severity": 2.9,
+      "service_id": "user-service",
+      "library": {
+        "id": "lib-postgresql",
+        "name": "postgresql",
+        "version": "42.2.20"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-094",
+      "title": "Security Vulnerability CVE-2026-1094 in commons-text",
+      "severity": 6.3,
+      "service_id": "sms-service",
+      "library": {
+        "id": "lib-commons-text",
+        "name": "commons-text",
+        "version": "1.9"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-095",
+      "title": "Security Vulnerability CVE-2026-1095 in netty-codec-http",
+      "severity": 5.1,
+      "service_id": "api-gateway",
+      "library": {
+        "id": "lib-netty",
+        "name": "netty-codec-http",
+        "version": "4.1.65.Final"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-096",
+      "title": "Security Vulnerability CVE-2026-1096 in grpc-netty",
+      "severity": 9.0,
+      "service_id": "sms-service",
+      "library": {
+        "id": "lib-grpc",
+        "name": "grpc-netty",
+        "version": "1.38.0"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-097",
+      "title": "Security Vulnerability CVE-2026-1097 in grpc-netty",
+      "severity": 3.8,
+      "service_id": "ledger-service",
+      "library": {
+        "id": "lib-grpc",
+        "name": "grpc-netty",
+        "version": "1.38.0"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-098",
+      "title": "Security Vulnerability CVE-2026-1098 in struts2-core",
+      "severity": 7.0,
+      "service_id": "order-service",
+      "library": {
+        "id": "lib-struts",
+        "name": "struts2-core",
+        "version": "2.5.26"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-099",
+      "title": "Security Vulnerability CVE-2026-1099 in lettuce-core",
+      "severity": 4.4,
+      "service_id": "search-service",
+      "library": {
+        "id": "lib-redis-client",
+        "name": "lettuce-core",
+        "version": "6.1.2.RELEASE"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-100",
+      "title": "Security Vulnerability CVE-2026-1100 in netty-codec-http",
+      "severity": 2.1,
+      "service_id": "media-service",
+      "library": {
+        "id": "lib-netty",
+        "name": "netty-codec-http",
+        "version": "4.1.65.Final"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-101",
+      "title": "Security Vulnerability CVE-2026-1101 in netty-codec-http",
+      "severity": 2.5,
+      "service_id": "recommendation-service",
+      "library": {
+        "id": "lib-netty",
+        "name": "netty-codec-http",
+        "version": "4.1.65.Final"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-102",
+      "title": "Security Vulnerability CVE-2026-1102 in jjwt",
+      "severity": 3.0,
+      "service_id": "ledger-service",
+      "library": {
+        "id": "lib-json-jwt",
+        "name": "jjwt",
+        "version": "0.9.1"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-103",
+      "title": "Security Vulnerability CVE-2026-1103 in netty-codec-http",
+      "severity": 8.6,
+      "service_id": "cart-service",
+      "library": {
+        "id": "lib-netty",
+        "name": "netty-codec-http",
+        "version": "4.1.65.Final"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-104",
+      "title": "Security Vulnerability CVE-2026-1104 in jjwt",
+      "severity": 3.2,
+      "service_id": "cart-service",
+      "library": {
+        "id": "lib-json-jwt",
+        "name": "jjwt",
+        "version": "0.9.1"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-105",
+      "title": "Security Vulnerability CVE-2026-1105 in jjwt",
+      "severity": 6.6,
+      "service_id": "metrics-collector",
+      "library": {
+        "id": "lib-json-jwt",
+        "name": "jjwt",
+        "version": "0.9.1"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-106",
+      "title": "Security Vulnerability CVE-2026-1106 in jackson-databind",
+      "severity": 7.0,
+      "service_id": "assets-cdn-origin",
+      "library": {
+        "id": "lib-jackson",
+        "name": "jackson-databind",
+        "version": "2.12.3"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-107",
+      "title": "Security Vulnerability CVE-2026-1107 in jjwt",
+      "severity": 9.0,
+      "service_id": "email-service",
+      "library": {
+        "id": "lib-json-jwt",
+        "name": "jjwt",
+        "version": "0.9.1"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-108",
+      "title": "Security Vulnerability CVE-2026-1108 in struts2-core",
+      "severity": 4.0,
+      "service_id": "checkout-service",
+      "library": {
+        "id": "lib-struts",
+        "name": "struts2-core",
+        "version": "2.5.26"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-109",
+      "title": "Security Vulnerability CVE-2026-1109 in struts2-core",
+      "severity": 4.0,
+      "service_id": "checkout-service",
+      "library": {
+        "id": "lib-struts",
+        "name": "struts2-core",
+        "version": "2.5.26"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-110",
+      "title": "Security Vulnerability CVE-2026-1110 in commons-text",
+      "severity": 7.4,
+      "service_id": "recommendation-service",
+      "library": {
+        "id": "lib-commons-text",
+        "name": "commons-text",
+        "version": "1.9"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-111",
+      "title": "Security Vulnerability CVE-2026-1111 in jjwt",
+      "severity": 5.8,
+      "service_id": "ledger-service",
+      "library": {
+        "id": "lib-json-jwt",
+        "name": "jjwt",
+        "version": "0.9.1"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-112",
+      "title": "Security Vulnerability CVE-2026-1112 in jackson-databind",
+      "severity": 2.7,
+      "service_id": "profile-service",
+      "library": {
+        "id": "lib-jackson",
+        "name": "jackson-databind",
+        "version": "2.12.3"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-113",
+      "title": "Security Vulnerability CVE-2026-1113 in jjwt",
+      "severity": 2.3,
+      "service_id": "shipping-service",
+      "library": {
+        "id": "lib-json-jwt",
+        "name": "jjwt",
+        "version": "0.9.1"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-114",
+      "title": "Security Vulnerability CVE-2026-1114 in struts2-core",
+      "severity": 6.8,
+      "service_id": "catalog-service",
+      "library": {
+        "id": "lib-struts",
+        "name": "struts2-core",
+        "version": "2.5.26"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-115",
+      "title": "Security Vulnerability CVE-2026-1115 in struts2-core",
+      "severity": 7.6,
+      "service_id": "profile-service",
+      "library": {
+        "id": "lib-struts",
+        "name": "struts2-core",
+        "version": "2.5.26"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-116",
+      "title": "Security Vulnerability CVE-2026-1116 in postgresql",
+      "severity": 6.2,
+      "service_id": "email-service",
+      "library": {
+        "id": "lib-postgresql",
+        "name": "postgresql",
+        "version": "42.2.20"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-117",
+      "title": "Security Vulnerability CVE-2026-1117 in netty-codec-http",
+      "severity": 9.1,
+      "service_id": "checkout-service",
+      "library": {
+        "id": "lib-netty",
+        "name": "netty-codec-http",
+        "version": "4.1.65.Final"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-118",
+      "title": "Security Vulnerability CVE-2026-1118 in struts2-core",
+      "severity": 6.1,
+      "service_id": "ratings-service",
+      "library": {
+        "id": "lib-struts",
+        "name": "struts2-core",
+        "version": "2.5.26"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-119",
+      "title": "Security Vulnerability CVE-2026-1119 in grpc-netty",
+      "severity": 6.4,
+      "service_id": "metrics-collector",
+      "library": {
+        "id": "lib-grpc",
+        "name": "grpc-netty",
+        "version": "1.38.0"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-120",
+      "title": "Security Vulnerability CVE-2026-1120 in postgresql",
+      "severity": 3.0,
+      "service_id": "card-vault-service",
+      "library": {
+        "id": "lib-postgresql",
+        "name": "postgresql",
+        "version": "42.2.20"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-121",
+      "title": "Security Vulnerability CVE-2026-1121 in grpc-netty",
+      "severity": 8.7,
+      "service_id": "search-service",
+      "library": {
+        "id": "lib-grpc",
+        "name": "grpc-netty",
+        "version": "1.38.0"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-122",
+      "title": "Security Vulnerability CVE-2026-1122 in jackson-databind",
+      "severity": 8.7,
+      "service_id": "assets-cdn-origin",
+      "library": {
+        "id": "lib-jackson",
+        "name": "jackson-databind",
+        "version": "2.12.3"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-123",
+      "title": "Security Vulnerability CVE-2026-1123 in commons-text",
+      "severity": 7.0,
+      "service_id": "ledger-service",
+      "library": {
+        "id": "lib-commons-text",
+        "name": "commons-text",
+        "version": "1.9"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-124",
+      "title": "Security Vulnerability CVE-2026-1124 in postgresql",
+      "severity": 9.3,
+      "service_id": "cart-service",
+      "library": {
+        "id": "lib-postgresql",
+        "name": "postgresql",
+        "version": "42.2.20"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-125",
+      "title": "Security Vulnerability CVE-2026-1125 in struts2-core",
+      "severity": 8.9,
+      "service_id": "comments-service",
+      "library": {
+        "id": "lib-struts",
+        "name": "struts2-core",
+        "version": "2.5.26"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-126",
+      "title": "Security Vulnerability CVE-2026-1126 in struts2-core",
+      "severity": 9.3,
+      "service_id": "user-service",
+      "library": {
+        "id": "lib-struts",
+        "name": "struts2-core",
+        "version": "2.5.26"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-127",
+      "title": "Security Vulnerability CVE-2026-1127 in struts2-core",
+      "severity": 8.6,
+      "service_id": "assets-cdn-origin",
+      "library": {
+        "id": "lib-struts",
+        "name": "struts2-core",
+        "version": "2.5.26"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-128",
+      "title": "Security Vulnerability CVE-2026-1128 in struts2-core",
+      "severity": 7.5,
+      "service_id": "web-gateway",
+      "library": {
+        "id": "lib-struts",
+        "name": "struts2-core",
+        "version": "2.5.26"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-129",
+      "title": "Security Vulnerability CVE-2026-1129 in postgresql",
+      "severity": 8.0,
+      "service_id": "catalog-service",
+      "library": {
+        "id": "lib-postgresql",
+        "name": "postgresql",
+        "version": "42.2.20"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-130",
+      "title": "Security Vulnerability CVE-2026-1130 in commons-text",
+      "severity": 4.0,
+      "service_id": "audit-logger",
+      "library": {
+        "id": "lib-commons-text",
+        "name": "commons-text",
+        "version": "1.9"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-131",
+      "title": "Security Vulnerability CVE-2026-1131 in netty-codec-http",
+      "severity": 4.9,
+      "service_id": "assets-cdn-origin",
+      "library": {
+        "id": "lib-netty",
+        "name": "netty-codec-http",
+        "version": "4.1.65.Final"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-132",
+      "title": "Security Vulnerability CVE-2026-1132 in lettuce-core",
+      "severity": 3.7,
+      "service_id": "api-gateway",
+      "library": {
+        "id": "lib-redis-client",
+        "name": "lettuce-core",
+        "version": "6.1.2.RELEASE"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-133",
+      "title": "Security Vulnerability CVE-2026-1133 in lettuce-core",
+      "severity": 4.6,
+      "service_id": "metrics-collector",
+      "library": {
+        "id": "lib-redis-client",
+        "name": "lettuce-core",
+        "version": "6.1.2.RELEASE"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-134",
+      "title": "Security Vulnerability CVE-2026-1134 in commons-text",
+      "severity": 3.7,
+      "service_id": "metrics-collector",
+      "library": {
+        "id": "lib-commons-text",
+        "name": "commons-text",
+        "version": "1.9"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-135",
+      "title": "Security Vulnerability CVE-2026-1135 in commons-text",
+      "severity": 5.0,
+      "service_id": "fraud-detection-service",
+      "library": {
+        "id": "lib-commons-text",
+        "name": "commons-text",
+        "version": "1.9"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-136",
+      "title": "Security Vulnerability CVE-2026-1136 in netty-codec-http",
+      "severity": 9.3,
+      "service_id": "profile-service",
+      "library": {
+        "id": "lib-netty",
+        "name": "netty-codec-http",
+        "version": "4.1.65.Final"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-137",
+      "title": "Security Vulnerability CVE-2026-1137 in grpc-netty",
+      "severity": 6.8,
+      "service_id": "profile-service",
+      "library": {
+        "id": "lib-grpc",
+        "name": "grpc-netty",
+        "version": "1.38.0"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-138",
+      "title": "Security Vulnerability CVE-2026-1138 in grpc-netty",
+      "severity": 9.0,
+      "service_id": "order-service",
+      "library": {
+        "id": "lib-grpc",
+        "name": "grpc-netty",
+        "version": "1.38.0"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-139",
+      "title": "Security Vulnerability CVE-2026-1139 in jjwt",
+      "severity": 3.3,
+      "service_id": "checkout-service",
+      "library": {
+        "id": "lib-json-jwt",
+        "name": "jjwt",
+        "version": "0.9.1"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-140",
+      "title": "Security Vulnerability CVE-2026-1140 in jackson-databind",
+      "severity": 2.8,
+      "service_id": "profile-service",
+      "library": {
+        "id": "lib-jackson",
+        "name": "jackson-databind",
+        "version": "2.12.3"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-141",
+      "title": "Security Vulnerability CVE-2026-1141 in grpc-netty",
+      "severity": 7.5,
+      "service_id": "shipping-service",
+      "library": {
+        "id": "lib-grpc",
+        "name": "grpc-netty",
+        "version": "1.38.0"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-142",
+      "title": "Security Vulnerability CVE-2026-1142 in postgresql",
+      "severity": 6.5,
+      "service_id": "catalog-service",
+      "library": {
+        "id": "lib-postgresql",
+        "name": "postgresql",
+        "version": "42.2.20"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-143",
+      "title": "Security Vulnerability CVE-2026-1143 in netty-codec-http",
+      "severity": 4.9,
+      "service_id": "notification-service",
+      "library": {
+        "id": "lib-netty",
+        "name": "netty-codec-http",
+        "version": "4.1.65.Final"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-144",
+      "title": "Security Vulnerability CVE-2026-1144 in commons-text",
+      "severity": 3.9,
+      "service_id": "sms-service",
+      "library": {
+        "id": "lib-commons-text",
+        "name": "commons-text",
+        "version": "1.9"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-145",
+      "title": "Security Vulnerability CVE-2026-1145 in postgresql",
+      "severity": 2.0,
+      "service_id": "ratings-service",
+      "library": {
+        "id": "lib-postgresql",
+        "name": "postgresql",
+        "version": "42.2.20"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-146",
+      "title": "Security Vulnerability CVE-2026-1146 in commons-text",
+      "severity": 4.7,
+      "service_id": "assets-cdn-origin",
+      "library": {
+        "id": "lib-commons-text",
+        "name": "commons-text",
+        "version": "1.9"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-147",
+      "title": "Security Vulnerability CVE-2026-1147 in grpc-netty",
+      "severity": 6.7,
+      "service_id": "auth-service",
+      "library": {
+        "id": "lib-grpc",
+        "name": "grpc-netty",
+        "version": "1.38.0"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-148",
+      "title": "Security Vulnerability CVE-2026-1148 in netty-codec-http",
+      "severity": 7.4,
+      "service_id": "fraud-detection-service",
+      "library": {
+        "id": "lib-netty",
+        "name": "netty-codec-http",
+        "version": "4.1.65.Final"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-149",
+      "title": "Security Vulnerability CVE-2026-1149 in jjwt",
+      "severity": 7.0,
+      "service_id": "search-service",
+      "library": {
+        "id": "lib-json-jwt",
+        "name": "jjwt",
+        "version": "0.9.1"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-150",
+      "title": "Security Vulnerability CVE-2026-1150 in postgresql",
+      "severity": 7.2,
+      "service_id": "catalog-service",
+      "library": {
+        "id": "lib-postgresql",
+        "name": "postgresql",
+        "version": "42.2.20"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-151",
+      "title": "Security Vulnerability CVE-2026-1151 in struts2-core",
+      "severity": 3.4,
+      "service_id": "email-service",
+      "library": {
+        "id": "lib-struts",
+        "name": "struts2-core",
+        "version": "2.5.26"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-152",
+      "title": "Security Vulnerability CVE-2026-1152 in postgresql",
+      "severity": 7.1,
+      "service_id": "fraud-detection-service",
+      "library": {
+        "id": "lib-postgresql",
+        "name": "postgresql",
+        "version": "42.2.20"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-153",
+      "title": "Security Vulnerability CVE-2026-1153 in jjwt",
+      "severity": 5.0,
+      "service_id": "billing-service",
+      "library": {
+        "id": "lib-json-jwt",
+        "name": "jjwt",
+        "version": "0.9.1"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-154",
+      "title": "Security Vulnerability CVE-2026-1154 in jackson-databind",
+      "severity": 4.3,
+      "service_id": "metrics-collector",
+      "library": {
+        "id": "lib-jackson",
+        "name": "jackson-databind",
+        "version": "2.12.3"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-155",
+      "title": "Security Vulnerability CVE-2026-1155 in postgresql",
+      "severity": 7.9,
+      "service_id": "ledger-service",
+      "library": {
+        "id": "lib-postgresql",
+        "name": "postgresql",
+        "version": "42.2.20"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-156",
+      "title": "Security Vulnerability CVE-2026-1156 in grpc-netty",
+      "severity": 5.5,
+      "service_id": "recommendation-service",
+      "library": {
+        "id": "lib-grpc",
+        "name": "grpc-netty",
+        "version": "1.38.0"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-157",
+      "title": "Security Vulnerability CVE-2026-1157 in commons-text",
+      "severity": 5.8,
+      "service_id": "inventory-service",
+      "library": {
+        "id": "lib-commons-text",
+        "name": "commons-text",
+        "version": "1.9"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-158",
+      "title": "Security Vulnerability CVE-2026-1158 in struts2-core",
+      "severity": 6.9,
+      "service_id": "assets-cdn-origin",
+      "library": {
+        "id": "lib-struts",
+        "name": "struts2-core",
+        "version": "2.5.26"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-159",
+      "title": "Security Vulnerability CVE-2026-1159 in grpc-netty",
+      "severity": 2.7,
+      "service_id": "search-service",
+      "library": {
+        "id": "lib-grpc",
+        "name": "grpc-netty",
+        "version": "1.38.0"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-160",
+      "title": "Security Vulnerability CVE-2026-1160 in commons-text",
+      "severity": 7.0,
+      "service_id": "media-service",
+      "library": {
+        "id": "lib-commons-text",
+        "name": "commons-text",
+        "version": "1.9"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-161",
+      "title": "Security Vulnerability CVE-2026-1161 in commons-text",
+      "severity": 3.1,
+      "service_id": "user-service",
+      "library": {
+        "id": "lib-commons-text",
+        "name": "commons-text",
+        "version": "1.9"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-162",
+      "title": "Security Vulnerability CVE-2026-1162 in commons-text",
+      "severity": 9.4,
+      "service_id": "api-gateway",
+      "library": {
+        "id": "lib-commons-text",
+        "name": "commons-text",
+        "version": "1.9"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-163",
+      "title": "Security Vulnerability CVE-2026-1163 in netty-codec-http",
+      "severity": 5.4,
+      "service_id": "recommendation-service",
+      "library": {
+        "id": "lib-netty",
+        "name": "netty-codec-http",
+        "version": "4.1.65.Final"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-164",
+      "title": "Security Vulnerability CVE-2026-1164 in commons-text",
+      "severity": 7.4,
+      "service_id": "pricing-service",
+      "library": {
+        "id": "lib-commons-text",
+        "name": "commons-text",
+        "version": "1.9"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-165",
+      "title": "Security Vulnerability CVE-2026-1165 in lettuce-core",
+      "severity": 5.0,
+      "service_id": "order-service",
+      "library": {
+        "id": "lib-redis-client",
+        "name": "lettuce-core",
+        "version": "6.1.2.RELEASE"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-166",
+      "title": "Security Vulnerability CVE-2026-1166 in jackson-databind",
+      "severity": 8.7,
+      "service_id": "card-vault-service",
+      "library": {
+        "id": "lib-jackson",
+        "name": "jackson-databind",
+        "version": "2.12.3"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-167",
+      "title": "Security Vulnerability CVE-2026-1167 in netty-codec-http",
+      "severity": 7.8,
+      "service_id": "audit-logger",
+      "library": {
+        "id": "lib-netty",
+        "name": "netty-codec-http",
+        "version": "4.1.65.Final"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-168",
+      "title": "Security Vulnerability CVE-2026-1168 in struts2-core",
+      "severity": 8.0,
+      "service_id": "user-service",
+      "library": {
+        "id": "lib-struts",
+        "name": "struts2-core",
+        "version": "2.5.26"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-169",
+      "title": "Security Vulnerability CVE-2026-1169 in lettuce-core",
+      "severity": 2.4,
+      "service_id": "ratings-service",
+      "library": {
+        "id": "lib-redis-client",
+        "name": "lettuce-core",
+        "version": "6.1.2.RELEASE"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-170",
+      "title": "Security Vulnerability CVE-2026-1170 in netty-codec-http",
+      "severity": 5.4,
+      "service_id": "user-service",
+      "library": {
+        "id": "lib-netty",
+        "name": "netty-codec-http",
+        "version": "4.1.65.Final"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-171",
+      "title": "Security Vulnerability CVE-2026-1171 in lettuce-core",
+      "severity": 7.0,
+      "service_id": "assets-cdn-origin",
+      "library": {
+        "id": "lib-redis-client",
+        "name": "lettuce-core",
+        "version": "6.1.2.RELEASE"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-172",
+      "title": "Security Vulnerability CVE-2026-1172 in grpc-netty",
+      "severity": 9.1,
+      "service_id": "email-service",
+      "library": {
+        "id": "lib-grpc",
+        "name": "grpc-netty",
+        "version": "1.38.0"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-173",
+      "title": "Security Vulnerability CVE-2026-1173 in postgresql",
+      "severity": 8.2,
+      "service_id": "inventory-service",
+      "library": {
+        "id": "lib-postgresql",
+        "name": "postgresql",
+        "version": "42.2.20"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-174",
+      "title": "Security Vulnerability CVE-2026-1174 in lettuce-core",
+      "severity": 8.7,
+      "service_id": "email-service",
+      "library": {
+        "id": "lib-redis-client",
+        "name": "lettuce-core",
+        "version": "6.1.2.RELEASE"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-175",
+      "title": "Security Vulnerability CVE-2026-1175 in lettuce-core",
+      "severity": 5.4,
+      "service_id": "comments-service",
+      "library": {
+        "id": "lib-redis-client",
+        "name": "lettuce-core",
+        "version": "6.1.2.RELEASE"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-176",
+      "title": "Security Vulnerability CVE-2026-1176 in commons-text",
+      "severity": 8.3,
+      "service_id": "media-service",
+      "library": {
+        "id": "lib-commons-text",
+        "name": "commons-text",
+        "version": "1.9"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-177",
+      "title": "Security Vulnerability CVE-2026-1177 in lettuce-core",
+      "severity": 6.7,
+      "service_id": "profile-service",
+      "library": {
+        "id": "lib-redis-client",
+        "name": "lettuce-core",
+        "version": "6.1.2.RELEASE"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-178",
+      "title": "Security Vulnerability CVE-2026-1178 in lettuce-core",
+      "severity": 2.6,
+      "service_id": "profile-service",
+      "library": {
+        "id": "lib-redis-client",
+        "name": "lettuce-core",
+        "version": "6.1.2.RELEASE"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-179",
+      "title": "Security Vulnerability CVE-2026-1179 in commons-text",
+      "severity": 4.0,
+      "service_id": "search-service",
+      "library": {
+        "id": "lib-commons-text",
+        "name": "commons-text",
+        "version": "1.9"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-180",
+      "title": "Security Vulnerability CVE-2026-1180 in netty-codec-http",
+      "severity": 3.0,
+      "service_id": "catalog-service",
+      "library": {
+        "id": "lib-netty",
+        "name": "netty-codec-http",
+        "version": "4.1.65.Final"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-181",
+      "title": "Security Vulnerability CVE-2026-1181 in postgresql",
+      "severity": 7.2,
+      "service_id": "user-service",
+      "library": {
+        "id": "lib-postgresql",
+        "name": "postgresql",
+        "version": "42.2.20"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-182",
+      "title": "Security Vulnerability CVE-2026-1182 in commons-text",
+      "severity": 2.5,
+      "service_id": "ratings-service",
+      "library": {
+        "id": "lib-commons-text",
+        "name": "commons-text",
+        "version": "1.9"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-183",
+      "title": "Security Vulnerability CVE-2026-1183 in grpc-netty",
+      "severity": 6.1,
+      "service_id": "shipping-service",
+      "library": {
+        "id": "lib-grpc",
+        "name": "grpc-netty",
+        "version": "1.38.0"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-184",
+      "title": "Security Vulnerability CVE-2026-1184 in jackson-databind",
+      "severity": 3.6,
+      "service_id": "shipping-service",
+      "library": {
+        "id": "lib-jackson",
+        "name": "jackson-databind",
+        "version": "2.12.3"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-185",
+      "title": "Security Vulnerability CVE-2026-1185 in postgresql",
+      "severity": 8.8,
+      "service_id": "shipping-service",
+      "library": {
+        "id": "lib-postgresql",
+        "name": "postgresql",
+        "version": "42.2.20"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-186",
+      "title": "Security Vulnerability CVE-2026-1186 in jackson-databind",
+      "severity": 8.4,
+      "service_id": "sms-service",
+      "library": {
+        "id": "lib-jackson",
+        "name": "jackson-databind",
+        "version": "2.12.3"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-187",
+      "title": "Security Vulnerability CVE-2026-1187 in postgresql",
+      "severity": 5.6,
+      "service_id": "media-service",
+      "library": {
+        "id": "lib-postgresql",
+        "name": "postgresql",
+        "version": "42.2.20"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-188",
+      "title": "Security Vulnerability CVE-2026-1188 in jjwt",
+      "severity": 7.7,
+      "service_id": "cart-service",
+      "library": {
+        "id": "lib-json-jwt",
+        "name": "jjwt",
+        "version": "0.9.1"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-189",
+      "title": "Security Vulnerability CVE-2026-1189 in postgresql",
+      "severity": 6.0,
+      "service_id": "audit-logger",
+      "library": {
+        "id": "lib-postgresql",
+        "name": "postgresql",
+        "version": "42.2.20"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-190",
+      "title": "Security Vulnerability CVE-2026-1190 in commons-text",
+      "severity": 5.7,
+      "service_id": "comments-service",
+      "library": {
+        "id": "lib-commons-text",
+        "name": "commons-text",
+        "version": "1.9"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-191",
+      "title": "Security Vulnerability CVE-2026-1191 in postgresql",
+      "severity": 5.6,
+      "service_id": "profile-service",
+      "library": {
+        "id": "lib-postgresql",
+        "name": "postgresql",
+        "version": "42.2.20"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-192",
+      "title": "Security Vulnerability CVE-2026-1192 in grpc-netty",
+      "severity": 7.0,
+      "service_id": "order-service",
+      "library": {
+        "id": "lib-grpc",
+        "name": "grpc-netty",
+        "version": "1.38.0"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-193",
+      "title": "Security Vulnerability CVE-2026-1193 in postgresql",
+      "severity": 7.4,
+      "service_id": "assets-cdn-origin",
+      "library": {
+        "id": "lib-postgresql",
+        "name": "postgresql",
+        "version": "42.2.20"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-194",
+      "title": "Security Vulnerability CVE-2026-1194 in lettuce-core",
+      "severity": 8.9,
+      "service_id": "metrics-collector",
+      "library": {
+        "id": "lib-redis-client",
+        "name": "lettuce-core",
+        "version": "6.1.2.RELEASE"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-195",
+      "title": "Security Vulnerability CVE-2026-1195 in jackson-databind",
+      "severity": 8.8,
+      "service_id": "recommendation-service",
+      "library": {
+        "id": "lib-jackson",
+        "name": "jackson-databind",
+        "version": "2.12.3"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-196",
+      "title": "Security Vulnerability CVE-2026-1196 in jackson-databind",
+      "severity": 2.6,
+      "service_id": "sms-service",
+      "library": {
+        "id": "lib-jackson",
+        "name": "jackson-databind",
+        "version": "2.12.3"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-197",
+      "title": "Security Vulnerability CVE-2026-1197 in struts2-core",
+      "severity": 8.5,
+      "service_id": "shipping-service",
+      "library": {
+        "id": "lib-struts",
+        "name": "struts2-core",
+        "version": "2.5.26"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-198",
+      "title": "Security Vulnerability CVE-2026-1198 in jackson-databind",
+      "severity": 4.0,
+      "service_id": "billing-service",
+      "library": {
+        "id": "lib-jackson",
+        "name": "jackson-databind",
+        "version": "2.12.3"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-199",
+      "title": "Security Vulnerability CVE-2026-1199 in commons-text",
+      "severity": 5.4,
+      "service_id": "catalog-service",
+      "library": {
+        "id": "lib-commons-text",
+        "name": "commons-text",
+        "version": "1.9"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-200",
+      "title": "Security Vulnerability CVE-2026-1200 in postgresql",
+      "severity": 4.1,
+      "service_id": "catalog-service",
+      "library": {
+        "id": "lib-postgresql",
+        "name": "postgresql",
+        "version": "42.2.20"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-201",
+      "title": "Security Vulnerability CVE-2026-1201 in postgresql",
+      "severity": 3.9,
+      "service_id": "metrics-collector",
+      "library": {
+        "id": "lib-postgresql",
+        "name": "postgresql",
+        "version": "42.2.20"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-202",
+      "title": "Security Vulnerability CVE-2026-1202 in lettuce-core",
+      "severity": 2.1,
+      "service_id": "auth-service",
+      "library": {
+        "id": "lib-redis-client",
+        "name": "lettuce-core",
+        "version": "6.1.2.RELEASE"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-203",
+      "title": "Security Vulnerability CVE-2026-1203 in jackson-databind",
+      "severity": 9.5,
+      "service_id": "email-service",
+      "library": {
+        "id": "lib-jackson",
+        "name": "jackson-databind",
+        "version": "2.12.3"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-204",
+      "title": "Security Vulnerability CVE-2026-1204 in commons-text",
+      "severity": 6.9,
+      "service_id": "cart-service",
+      "library": {
+        "id": "lib-commons-text",
+        "name": "commons-text",
+        "version": "1.9"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-205",
+      "title": "Security Vulnerability CVE-2026-1205 in jackson-databind",
+      "severity": 7.7,
+      "service_id": "media-service",
+      "library": {
+        "id": "lib-jackson",
+        "name": "jackson-databind",
+        "version": "2.12.3"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-206",
+      "title": "Security Vulnerability CVE-2026-1206 in commons-text",
+      "severity": 8.3,
+      "service_id": "user-service",
+      "library": {
+        "id": "lib-commons-text",
+        "name": "commons-text",
+        "version": "1.9"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-207",
+      "title": "Security Vulnerability CVE-2026-1207 in struts2-core",
+      "severity": 3.8,
+      "service_id": "recommendation-service",
+      "library": {
+        "id": "lib-struts",
+        "name": "struts2-core",
+        "version": "2.5.26"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-208",
+      "title": "Security Vulnerability CVE-2026-1208 in netty-codec-http",
+      "severity": 6.2,
+      "service_id": "warehouse-service",
+      "library": {
+        "id": "lib-netty",
+        "name": "netty-codec-http",
+        "version": "4.1.65.Final"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-209",
+      "title": "Security Vulnerability CVE-2026-1209 in lettuce-core",
+      "severity": 7.2,
+      "service_id": "ledger-service",
+      "library": {
+        "id": "lib-redis-client",
+        "name": "lettuce-core",
+        "version": "6.1.2.RELEASE"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-210",
+      "title": "Security Vulnerability CVE-2026-1210 in grpc-netty",
+      "severity": 3.3,
+      "service_id": "media-service",
+      "library": {
+        "id": "lib-grpc",
+        "name": "grpc-netty",
+        "version": "1.38.0"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-211",
+      "title": "Security Vulnerability CVE-2026-1211 in netty-codec-http",
+      "severity": 7.8,
+      "service_id": "recommendation-service",
+      "library": {
+        "id": "lib-netty",
+        "name": "netty-codec-http",
+        "version": "4.1.65.Final"
+      },
+      "technique_id": "T1190"
+    },
+    {
+      "id": "flaw-212",
+      "title": "Security Vulnerability CVE-2026-1212 in jjwt",
+      "severity": 2.8,
+      "service_id": "billing-service",
+      "library": {
+        "id": "lib-json-jwt",
+        "name": "jjwt",
+        "version": "0.9.1"
+      },
+      "technique_id": null
+    },
+    {
+      "id": "flaw-213",
+      "title": "Security Vulnerability CVE-2026-1213 in jjwt",
+      "severity": 6.3,
+      "service_id": "web-gateway",
+      "library": {
+        "id": "lib-json-jwt",
+        "name": "jjwt",
+        "version": "0.9.1"
+      },
+      "technique_id": null
+    }
+  ]
+}
