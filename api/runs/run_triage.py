@@ -5,6 +5,7 @@ from api.runs.make_run_configuration import make_run_configuration
 from api.services.app_services import AppServices
 from api.steps.make_agent_step import make_agent_step, make_closing_step
 
+MESSAGE_LIMIT = 400
 CLOSING_STEP_BY_STATUS = {
     "finished": ("finished", "Run finished"),
     "paused": ("step", "Run paused for approval"),
@@ -17,7 +18,9 @@ async def run_triage(services: AppServices, scan_id: str, graph_input: Any) -> N
     try:
         await stream_steps(services, scan_id, graph_input)
     except Exception as error:
-        await services.run_events.add(make_closing_step(scan_id, "failed", str(error)))
+        await services.run_events.add(
+            make_closing_step(scan_id, "failed", str(error)[:MESSAGE_LIMIT])
+        )
         raise
 
 
