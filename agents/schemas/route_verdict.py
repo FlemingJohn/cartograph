@@ -2,6 +2,7 @@ from pydantic import BaseModel, Field
 
 
 class RouteVerdict(BaseModel):
+    finding_id: str
     explanation: str = Field(
         description="Two sentences: how an attacker from the internet gets to this service, "
         "or why they cannot, and what data sits nearby"
