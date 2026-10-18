@@ -58,6 +58,15 @@ On networks that re-sign secure traffic, set `UV_SYSTEM_CERTS=1` before the
    gains a route from the front door and its rank jumps. **Undo the link**
    puts the map back.
 
+## MCP server
+
+CartoGraph also runs as an MCP server, so Claude Code, Claude Desktop, Cursor
+or Antigravity can rank flaws and explain routes straight from the graph.
+`.mcp.json`, `.cursor/mcp.json` and `.agents/mcp_config.json` connect it.
+See [docs/mcp-server.md](docs/mcp-server.md).
+
+    uv run python -m cartograph_mcp.serve_stdio
+
 ## Running the tool server
 
     python -m tools.make_server
