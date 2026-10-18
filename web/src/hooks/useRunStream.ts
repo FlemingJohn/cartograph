@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { getApiUrl } from "../lib/getApiUrl";
 import { getRunStatus } from "../lib/getRunStatus";
+import { makeFailedStep } from "../lib/makeFailedStep";
 import { sendJson } from "../lib/sendJson";
 import type { AgentStep } from "../types/AgentStep";
 import type { RunStream } from "../types/RunStream";
@@ -26,19 +27,24 @@ export function useRunStream(scanId: string): RunStream {
     return () => sourceRef.current?.close();
   }, [openStream]);
 
-  const startRun = useCallback(async () => {
-    sourceRef.current?.close();
-    setSteps([]);
-    await sendJson("POST", "/runs", { scan_id: scanId });
-    openStream();
-  }, [scanId, openStream]);
-
-  const answerApproval = useCallback(
-    async (isApproved: boolean) => {
-      await sendJson("POST", `/runs/${scanId}/approve`, { is_approved: isApproved });
-    },
+  const reportFailure = useCallback(
+    (error: unknown) => setSteps((current) => [...current, makeFailedStep(scanId, error)]),
     [scanId],
   );
 
-  return { steps, runStatus: getRunStatus(steps), startRun, answerApproval };
+  const startRun = useCallback(async () => {
+    sourceRef.current?.close();
+    setSteps([]);
+    await sendJson("POST", "/runs", { scan_id: scanId }).then(openStream, reportFailure);
+  }, [scanId, openStream, reportFailure]);
+
+  const answerApproval = useCallback(
+    async (isApproved: boolean) => {
+      const body = { is_approved: isApproved };
+      await sendJson("POST", `/runs/${scanId}/approve`, body).catch(reportFailure);
+    },
+    [scanId, reportFailure],
+  );
+
+  return { steps, runStatus: getRunStatus(steps), startRun, answerApproval, reportFailure };
 }
