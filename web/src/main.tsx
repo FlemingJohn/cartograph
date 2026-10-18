@@ -9,6 +9,7 @@ import "./styles/intro.css";
 import "./styles/dock.css";
 import "./styles/findings.css";
 import "./styles/details.css";
+import "./styles/simulation.css";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
